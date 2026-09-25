@@ -877,6 +877,7 @@
     ]
    ],
    "notas": [
+    "Socio inquilino sin energía a su nombre: pide garante, a cambio de una conexión más barata que la de no socio.",
     "Pack SENSA: con 100 Mb o 50 Mb + TV, sin cargo adicional.",
     "Router en comodato. En caso de rotura o robo responde el usuario. Permanencia mínima 1 año."
    ]
@@ -920,6 +921,7 @@
     ]
    ],
    "notas": [
+    "Sin garante: por eso la conexión es más cara que para socios ($60.500 en 6 cuotas contra $29.645 en 4 cuotas).",
     "Pack SENSA: con 100 Mb o 50 Mb + TV, sin cargo adicional.",
     "Router en comodato. En caso de rotura o robo responde el usuario. Permanencia mínima 1 año."
    ]
@@ -1690,7 +1692,7 @@
    "tema": "Garante",
    "energia": "Titular de luz y propietario (tarifario vigente).",
    "agua": "A confirmar si aplica (servicio a nombre del propietario).",
-   "tic": "Internet socio inquilino: titular del servicio de energía. No socio: no figura. Inalámbrico: a confirmar.",
+   "tic": "Internet socio inquilino: garante titular del servicio de energía. No socio: sin garante, con conexión más cara. Inalámbrico: a confirmar.",
    "movilcoop": "No aplica.",
    "sociales": "No aplica.",
    "criterio_unico": ""
@@ -2041,8 +2043,8 @@
    "detalle": "El tarifario no pide garante al inquilino no socio; al socio inquilino sí.",
    "fuente": "Tarifario",
    "quien_define": "",
-   "estado": "Abierto",
-   "resolucion": ""
+   "estado": "Resuelto",
+   "resolucion": "Confirmado: al no socio no se le pide garante y paga una conexión más cara; al socio inquilino sí se le pide garante."
   },
   {
    "n": 26,
@@ -2150,6 +2152,10 @@
   {
    "fecha": "2026-09-25",
    "cambio": "TIC: cualquier servicio se conecta de forma individual, también para no socios. Resuelto el pendiente 'Internet para no socios'."
+  },
+  {
+   "fecha": "2026-09-25",
+   "cambio": "Internet: confirmado que al no socio no se le pide garante y paga una conexión más cara; al socio inquilino sí se le pide garante."
   }
  ]
 }
