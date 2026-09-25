@@ -877,7 +877,6 @@
     ]
    ],
    "notas": [
-    "Socio inquilino sin energía a su nombre: pide garante, a cambio de una conexión más barata que la de no socio.",
     "Pack SENSA: con 100 Mb o 50 Mb + TV, sin cargo adicional.",
     "Router en comodato. En caso de rotura o robo responde el usuario. Permanencia mínima 1 año."
    ]
@@ -921,7 +920,6 @@
     ]
    ],
    "notas": [
-    "Sin garante: por eso la conexión es más cara que para socios ($60.500 en 6 cuotas contra $29.645 en 4 cuotas).",
     "Pack SENSA: con 100 Mb o 50 Mb + TV, sin cargo adicional.",
     "Router en comodato. En caso de rotura o robo responde el usuario. Permanencia mínima 1 año."
    ]
@@ -2156,6 +2154,10 @@
   {
    "fecha": "2026-09-25",
    "cambio": "Internet: confirmado que al no socio no se le pide garante y paga una conexión más cara; al socio inquilino sí se le pide garante."
+  },
+  {
+   "fecha": "2026-09-25",
+   "cambio": "Se quitaron las notas aclaratorias sobre garante en T02 y T12."
   }
  ]
 }
