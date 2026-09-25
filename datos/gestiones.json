@@ -109,7 +109,7 @@
     "Permiso municipal original (solo si es a estrenar).",
     "Declaración de potencia (a partir de la 3ra conexión en el mismo domicilio).",
     "Si hace el trámite otra persona: autorización con fotocopia del DNI.",
-    "Forma de pago: la conexión se abona al momento del trámite. Con depósito: 50% al inicio y el saldo en 2 cuotas en la boleta."
+    "Forma de pago: la conexión se abona al momento del trámite. El depósito en garantía se puede abonar el 50% al momento del trámite y el saldo en 2 cuotas."
    ]
   },
   {
@@ -216,7 +216,7 @@
    "notas": [
     "Permiso municipal original (solo si es a estrenar).",
     "Si hace el trámite otra persona: autorización con fotocopia del DNI.",
-    "Forma de pago: la conexión se abona al momento del trámite. Con depósito: 50% al inicio y el saldo en 2 cuotas en la boleta."
+    "Forma de pago: la conexión se abona al momento del trámite. El depósito en garantía se puede abonar el 50% al momento del trámite y el saldo en 2 cuotas."
    ]
   },
   {
@@ -322,7 +322,7 @@
     "Contrato social (solo si es una sociedad).",
     "Declaración de potencia (a partir de la 3ra conexión en el mismo domicilio).",
     "Si hace el trámite otra persona: autorización con fotocopia del DNI.",
-    "Forma de pago: la conexión se abona al momento del trámite. Con depósito: 50% al inicio y el saldo en 2 cuotas en la boleta."
+    "Forma de pago: la conexión se abona al momento del trámite. El depósito en garantía se puede abonar el 50% al momento del trámite y el saldo en 2 cuotas."
    ]
   },
   {
@@ -431,7 +431,7 @@
     "Permiso municipal original (solo si es a estrenar).",
     "Contrato social (solo si es una sociedad).",
     "Si hace el trámite otra persona: autorización con fotocopia del DNI.",
-    "Forma de pago: la conexión se abona al momento del trámite. Con depósito: 50% al inicio y el saldo en 2 cuotas en la boleta."
+    "Forma de pago: la conexión se abona al momento del trámite. El depósito en garantía se puede abonar el 50% al momento del trámite y el saldo en 2 cuotas."
    ]
   },
   {
@@ -1697,7 +1697,7 @@
   },
   {
    "tema": "Depósito en garantía",
-   "energia": "Familiar $316.020,89; comercial o trifásica hasta 10 kW $474.031,30; más de 10 kW $632.041,75. Pago: 50% al inicio y saldo en 2 cuotas.",
+   "energia": "Familiar $316.020,89; comercial o trifásica hasta 10 kW $474.031,30; más de 10 kW $632.041,75. Se puede abonar el 50% al momento del trámite y el saldo en 2 cuotas.",
    "agua": "A confirmar.",
    "tic": "Mencionado, sin monto ni forma de pago.",
    "movilcoop": "No aplica.",
@@ -2158,6 +2158,10 @@
   {
    "fecha": "2026-09-25",
    "cambio": "Se quitaron las notas aclaratorias sobre garante en T02 y T12."
+  },
+  {
+   "fecha": "2026-09-25",
+   "cambio": "Se reformuló la forma de pago del depósito en garantía."
   }
  ]
 }
