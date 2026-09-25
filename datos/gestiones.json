@@ -1690,7 +1690,7 @@
    "tema": "Garante",
    "energia": "Titular de luz y propietario (tarifario vigente).",
    "agua": "A confirmar si aplica (servicio a nombre del propietario).",
-   "tic": "Internet socio inquilino: garante titular del servicio de energía. No socio: sin garante, con conexión más cara. Inalámbrico: a confirmar.",
+   "tic": "Internet socio inquilino: garante titular del servicio de energía. No socio: sin garante. Inalámbrico: a confirmar.",
    "movilcoop": "No aplica.",
    "sociales": "No aplica.",
    "criterio_unico": ""
@@ -2042,7 +2042,7 @@
    "fuente": "Tarifario",
    "quien_define": "",
    "estado": "Resuelto",
-   "resolucion": "Confirmado: al no socio no se le pide garante y paga una conexión más cara; al socio inquilino sí se le pide garante."
+   "resolucion": "Confirmado: al no socio no se le pide garante; al socio inquilino sí."
   },
   {
    "n": 26,
@@ -2153,7 +2153,7 @@
   },
   {
    "fecha": "2026-09-25",
-   "cambio": "Internet: confirmado que al no socio no se le pide garante y paga una conexión más cara; al socio inquilino sí se le pide garante."
+   "cambio": "Internet: confirmado que al no socio no se le pide garante; al socio inquilino sí se le pide garante."
   },
   {
    "fecha": "2026-09-25",
