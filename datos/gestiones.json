@@ -843,7 +843,7 @@
   {
    "id": "O09",
    "gestion": "Banco de Sangre",
-   "quien": "Socio con energía o agua activa.",
+   "quien": "Socio con energía o agua activa. A CONFIRMAR si lo gestiona Ventas o el Banco de Sangre.",
    "documentacion": "Libreta de familia o DNI del grupo familiar.",
    "costo": "—",
    "canales": "Presencial",
@@ -1323,6 +1323,10 @@
   {
    "fecha": "2026-09-25",
    "cambio": "La documentación de cada gestión se muestra como lista."
+  },
+  {
+   "fecha": "2026-09-25",
+   "cambio": "Se quitaron los campos 'Intervienen / a quién se deriva' y 'Fuente' de las gestiones."
   }
  ]
 }

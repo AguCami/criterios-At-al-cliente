@@ -262,8 +262,7 @@ function card(g){
     el("span", {class:"id"}, g.id), el("span", {class:"title"}, g.gestion), flags,
     g.quien ? el("span", {class:"sub"}, g.quien) : null);
   const facts = el("dl", {class:"facts"});
-  [["Documentación", g.documentacion, true], ["Costo / qué se cobra", g.costo], ["Canales", g.canales],
-   ["Intervienen / a quién se deriva", g.intervienen], ["Fuente", g.fuente]]
+  [["Documentación", g.documentacion, true], ["Costo / qué se cobra", g.costo], ["Canales", g.canales]]
     .forEach(([k, v, wide]) => { if (v && v !== "—") facts.append(el("div", {class: wide ? "wide" : ""}, el("dt", {}, k), el("dd", {}, wide ? toList(v) : v))); });
   const val = el("div", {class:"val"});
   SECTORES.forEach(([k, name]) => {
