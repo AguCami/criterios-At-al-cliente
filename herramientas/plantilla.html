@@ -85,6 +85,8 @@ details.card>summary::-webkit-details-marker{display:none}
 .facts dt{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
 .facts dd{margin:0;max-width:65ch}
 .facts .wide{grid-column:1/-1}
+.facts ul{margin:2px 0 0;padding-left:20px;display:grid;gap:3px;max-width:75ch}
+.facts li::marker{color:var(--c)}
 .val{display:flex;flex-wrap:wrap;gap:8px;align-items:center;border-top:1px dashed var(--line);padding-top:10px;font-size:13px}
 .val strong{font-weight:600;margin-right:2px}
 .obs{background:var(--accent-soft);border-radius:6px;padding:8px 10px;font-size:14px}
@@ -181,6 +183,12 @@ const el = (tag, attrs={}, ...kids) => {
   for (const k of kids) if (k != null && k !== "") e.append(k);
   return e;
 };
+const toList = txt => {
+  const items = txt.split(/;\s*|\.\s+(?=[A-ZÁÉÍÓÚÑ][a-záéíóúñ])/)
+    .map(x => x.trim().replace(/\.$/, "")).filter(Boolean)
+    .map(x => x.charAt(0).toUpperCase() + x.slice(1));
+  return items.length > 1 ? el("ul", {}, ...items.map(i => el("li", {}, i))) : txt;
+};
 const pill = (txt, cls) => el("span", {class:"pill " + cls}, txt);
 const alertOf = g => {
   const t = [g.quien, g.intervienen, g.documentacion].join(" ");
@@ -256,7 +264,7 @@ function card(g){
   const facts = el("dl", {class:"facts"});
   [["Documentación", g.documentacion, true], ["Costo / qué se cobra", g.costo], ["Canales", g.canales],
    ["Intervienen / a quién se deriva", g.intervienen], ["Fuente", g.fuente]]
-    .forEach(([k, v, wide]) => { if (v && v !== "—") facts.append(el("div", {class: wide ? "wide" : ""}, el("dt", {}, k), el("dd", {}, v))); });
+    .forEach(([k, v, wide]) => { if (v && v !== "—") facts.append(el("div", {class: wide ? "wide" : ""}, el("dt", {}, k), el("dd", {}, wide ? toList(v) : v))); });
   const val = el("div", {class:"val"});
   SECTORES.forEach(([k, name]) => {
     const v = g.validacion[k];

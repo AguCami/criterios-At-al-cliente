@@ -1319,6 +1319,10 @@
   {
    "fecha": "2026-09-25",
    "cambio": "Versión inicial armada a partir de PG 02 e IO 02.01, 02.02 y 02.03."
+  },
+  {
+   "fecha": "2026-09-25",
+   "cambio": "La documentación de cada gestión se muestra como lista."
   }
  ]
 }
