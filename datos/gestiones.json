@@ -791,7 +791,7 @@
   {
    "id": "T01",
    "gestion": "Teléfono – conexión",
-   "quien": "Titular de energía en el domicilio / propietario / inquilino.",
+   "quien": "Cualquier persona, socio o no socio. Se puede contratar solo, sin otros servicios TIC.",
    "documentacion": "Titular de energía: solo DNI. Propietario sin energía a su nombre: DNI + escritura. Inquilino: DNI + contrato con firmas certificadas + garante (cualquier asociado titular de energía).",
    "costo": "Conexión $1.220; solo teléfono por fibra $17.011,93. Mantenimiento mensual: familiar $4.680 / comercial $12.300.",
    "canales": "Presencial / Web / Teléfono",
@@ -831,7 +831,7 @@
   {
    "id": "T02",
    "gestion": "Internet por fibra (GPON) – socio",
-   "quien": "Socio de la Cooperativa.",
+   "quien": "Socio de la Cooperativa. Se puede contratar solo, sin otros servicios TIC.",
    "documentacion": "Inquilino sin energía a su nombre: DNI; contrato de alquiler con firma del propietario certificada; garante (titular del servicio de energía en la Cooperativa).",
    "costo": "Conexión $29.645 en 4 cuotas de $7.411,25.",
    "canales": "Presencial / Web / Teléfono",
@@ -885,7 +885,7 @@
    "id": "T12",
    "servicio": "TIC",
    "gestion": "Internet por fibra (GPON) – no socio",
-   "quien": "No socio de la Cooperativa.",
+   "quien": "No socio de la Cooperativa. Se puede contratar solo, sin otros servicios TIC.",
    "documentacion": "Inquilino sin energía a su nombre: DNI; contrato de alquiler con firma del propietario certificada.",
    "costo": "Conexión $60.500 en 6 cuotas de $10.083,33.",
    "canales": "Presencial / Web / Teléfono",
@@ -971,7 +971,7 @@
   {
    "id": "T04",
    "gestion": "Televisión (IPTV) – conexión",
-   "quien": "Ser socio (energía, agua o teléfono a su nombre) y tener internet. Si solo quiere TV: prestación de internet 'solo IPTV' sin abono.",
+   "quien": "Socio o no socio. Se puede contratar sola, sin otros servicios TIC.",
    "documentacion": "Garantía: la misma cargada en internet.",
    "costo": "Instalación 1 TV $17.011,93 (aparato en comodato), financiada hasta 6 cuotas con interés o contado. Gratis adhiriendo a débito automático.",
    "canales": "Presencial / Web / Teléfono",
@@ -1708,7 +1708,7 @@
    "tema": "¿Hay que ser socio?",
    "energia": "No.",
    "agua": "Propietario.",
-   "tic": "Internet fibra: hay tarifa para socio y para no socio. TV: socio + internet. Inalámbrico: no.",
+   "tic": "No. Cualquier servicio TIC se conecta de forma individual, también para no socios (internet fibra tiene tarifa de socio y de no socio).",
    "movilcoop": "Titular de la luz con 6 meses.",
    "sociales": "Energía o agua activa.",
    "criterio_unico": ""
@@ -2030,8 +2030,8 @@
    "detalle": "El IO 02.03 dice que quien no tiene energía debe conectar teléfono antes; el tarifario vigente tiene conexión para no socios (6 cuotas de $10.083,33).",
    "fuente": "IO 02.03 §5.2.1 / Tarifario",
    "quien_define": "",
-   "estado": "Abierto",
-   "resolucion": ""
+   "estado": "Resuelto",
+   "resolucion": "Lo del IO 02.03 está desactualizado: hoy cualquier servicio TIC se conecta de forma individual, también para no socios."
   },
   {
    "n": 25,
@@ -2146,6 +2146,10 @@
   {
    "fecha": "2026-09-25",
    "cambio": "Se cruzó con el tarifario vigente: nuevos requisitos y precios de energía, agua, internet, TV, teléfono, sepelio y subsidio. Se agregaron E15-E18 (conexiones comerciales), T12 (internet no socio) y T13 (packs de TV). 9 pendientes nuevos y 2 resueltos."
+  },
+  {
+   "fecha": "2026-09-25",
+   "cambio": "TIC: cualquier servicio se conecta de forma individual, también para no socios. Resuelto el pendiente 'Internet para no socios'."
   }
  ]
 }
