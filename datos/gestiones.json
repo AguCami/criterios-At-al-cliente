@@ -11,7 +11,7 @@
    "id": "E01",
    "gestion": "Conexión monofásica – propietario",
    "quien": "Cualquier persona (socio o no).",
-   "documentacion": "DNI/CUIT/CUIL; escritura o boleto de compraventa; certificado de instalación eléctrica apta (usuario y punto de medición); contrato social si es sociedad; foto del monolito listo (Anexo III); impuesto provincial de Rentas; inscripción en ARCA e Ingresos Brutos; si es a estrenar: permiso municipal original.",
+   "documentacion": "DNI/CUIT/CUIL; escritura o boleto de compraventa; certificado de instalación eléctrica apta (usuario y punto de medición); contrato social si es sociedad; foto del monolito listo (Anexo III); inscripción en ARCA e Ingresos Brutos; si es a estrenar: permiso municipal original.",
    "costo": "Costo de conexión + suscripción de acciones. Sin garantía.",
    "canales": "Presencial / Web",
    "intervienen": "Oficina Técnica (factibilidad); Técnico de Servicios (conexión)",
@@ -28,7 +28,7 @@
    "id": "E02",
    "gestion": "Conexión monofásica – inquilino",
    "quien": "Inquilino con garante o depósito en garantía.",
-   "documentacion": "DNI/CUIT/CUIL del inquilino, del propietario y del garante; contrato de alquiler con firmas certificadas (juez de paz o escribano); certificado apto (usuario y punto de medición); contrato social si es sociedad; foto impresa y firmada por el propietario del domicilio y monolito; monolito listo; Rentas; ARCA e IIBB; si es a estrenar: permiso municipal original.",
+   "documentacion": "DNI/CUIT/CUIL del inquilino, del propietario y del garante; contrato de alquiler con firmas certificadas (juez de paz o escribano); certificado apto (usuario y punto de medición); contrato social si es sociedad; foto impresa y firmada por el propietario del domicilio y monolito; monolito listo; ARCA e IIBB; si es a estrenar: permiso municipal original.",
    "costo": "Costo de conexión + acciones + depósito en garantía (4 cuotas, 1ª de contado) si no hay garante. El depósito se devuelve en la baja.",
    "canales": "Presencial / Web",
    "intervienen": "Garante: socio de la Cooperativa y propietario",
@@ -232,7 +232,7 @@
    "id": "A01",
    "gestion": "Conexión urbana o rural – propietario",
    "quien": "Propietario.",
-   "documentacion": "DNI; autorización municipal o final de obra; escritura o boleto; monolito listo; impuesto provincial de Rentas.",
+   "documentacion": "DNI; autorización municipal o final de obra; escritura o boleto; monolito listo.",
    "costo": "Tarifa urbana 'Con medidor T1' o 'Rural T1'. Firma DJ, domicilio electrónico y financiación.",
    "canales": "Presencial / Web",
    "intervienen": "Oficina Técnica",
@@ -1314,6 +1314,10 @@
   {
    "fecha": "2026-09-25",
    "cambio": "E01 a E04: se agregó 'si es a estrenar: permiso municipal original'. Se quitó E05 (quedó incluida en esas gestiones)."
+  },
+  {
+   "fecha": "2026-09-25",
+   "cambio": "Se quitó 'impuesto provincial de Rentas' de la documentación: ya no se pide."
   }
  ]
 }
