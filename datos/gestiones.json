@@ -4,76 +4,435 @@
   "PG 02 Trámites de atención al cliente",
   "IO 02.01 Servicios de energía",
   "IO 02.02 Servicios de agua",
-  "IO 02.03 Servicios de TIC"
+  "IO 02.03 Servicios de TIC",
+  "Tarifario vigente (requisitos y costos al 25/09/2026)"
  ],
  "gestiones": [
   {
    "id": "E01",
-   "gestion": "Conexión monofásica – propietario",
-   "quien": "Cualquier persona (socio o no).",
-   "documentacion": "DNI/CUIT/CUIL; escritura o boleto de compraventa; certificado de instalación eléctrica apta (usuario y punto de medición); contrato social si es sociedad; foto del monolito listo (Anexo III); inscripción en ARCA e Ingresos Brutos; si es a estrenar: permiso municipal original.",
-   "costo": "Costo de conexión + suscripción de acciones. Sin garantía.",
+   "gestion": "Conexión monofásica – familiar propietario",
+   "quien": "Propietario, uso familiar.",
+   "documentacion": "Fotocopia del DNI; escritura o boleto de compraventa certificado por escribano; certificado de instalación eléctrica apta (Ley Prov. N° 10.281); correo electrónico y celular de contacto.",
+   "costo": "Conexión $82.984,05 + acciones familia $12. Sin garantía.",
    "canales": "Presencial / Web",
    "intervienen": "Oficina Técnica (factibilidad); Técnico de Servicios (conexión)",
-   "fuente": "IO 02.01 §5.1.1 / Fig. 1",
+   "fuente": "Tarifario vigente",
    "servicio": "Energía",
    "validacion": {
     "ventas": "",
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [
+    [
+     "Precios",
+     "Conexión",
+     "$82.984,05"
+    ],
+    [
+     "Precios",
+     "Traslado",
+     "$82.984,05"
+    ],
+    [
+     "Precios",
+     "Transferencia",
+     "$82.984,05"
+    ],
+    [
+     "Precios",
+     "Reconexión",
+     "$12.656,53"
+    ],
+    [
+     "Precios",
+     "Acciones familia",
+     "$12"
+    ]
+   ],
+   "notas": [
+    "Permiso municipal original (solo si es a estrenar).",
+    "Declaración de potencia (a partir de la 3ra conexión en el mismo domicilio).",
+    "Si hace el trámite otra persona: autorización con fotocopia del DNI."
+   ]
   },
   {
    "id": "E02",
-   "gestion": "Conexión monofásica – inquilino",
-   "quien": "Inquilino con garante o depósito en garantía.",
-   "documentacion": "DNI/CUIT/CUIL del inquilino, del propietario y del garante; contrato de alquiler con firmas certificadas (juez de paz o escribano); certificado apto (usuario y punto de medición); contrato social si es sociedad; foto impresa y firmada por el propietario del domicilio y monolito; monolito listo; ARCA e IIBB; si es a estrenar: permiso municipal original.",
-   "costo": "Costo de conexión + acciones + depósito en garantía (4 cuotas, 1ª de contado) si no hay garante. El depósito se devuelve en la baja.",
+   "gestion": "Conexión monofásica – familiar inquilino",
+   "quien": "Inquilino, uso familiar, con depósito en garantía o garante.",
+   "documentacion": "Fotocopia del DNI; contrato de alquiler con firma del propietario certificada (juez de paz o escribano); certificado de instalación eléctrica apta (Ley Prov. N° 10.281); depósito en garantía o garante (titular de luz y propietario); correo electrónico y celular de contacto.",
+   "costo": "Conexión $82.984,05 + acciones $12 + depósito familiar $316.020,89 (si no hay garante).",
    "canales": "Presencial / Web",
    "intervienen": "Garante: socio de la Cooperativa y propietario",
-   "fuente": "IO 02.01 §5.1.1 / Fig. 1",
+   "fuente": "Tarifario vigente",
    "servicio": "Energía",
    "validacion": {
     "ventas": "",
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [
+    [
+     "Precios",
+     "Conexión",
+     "$82.984,05"
+    ],
+    [
+     "Precios",
+     "Traslado",
+     "$82.984,05"
+    ],
+    [
+     "Precios",
+     "Transferencia",
+     "$82.984,05"
+    ],
+    [
+     "Precios",
+     "Reconexión",
+     "$12.656,53"
+    ],
+    [
+     "Precios",
+     "Acciones familia",
+     "$12"
+    ],
+    [
+     "Depósito en garantía",
+     "Familiar",
+     "$316.020,89"
+    ]
+   ],
+   "notas": [
+    "Permiso municipal original (solo si es a estrenar).",
+    "Declaración de potencia (a partir de la 3ra conexión en el mismo domicilio).",
+    "Si hace el trámite otra persona: autorización con fotocopia del DNI.",
+    "Forma de pago: la conexión se abona al momento del trámite. Con depósito: 50% al inicio y el saldo en 2 cuotas en la boleta."
+   ]
   },
   {
    "id": "E03",
-   "gestion": "Conexión trifásica – propietario",
-   "quien": "Igual que monofásica + declaración de potencia.",
-   "documentacion": "Igual que E01 + foto impresa y firmada por el propietario del domicilio y monolito + declaración jurada de potencia instalada (RPG/RIO 02.01). ARCA e IIBB en caso de comercio; si es a estrenar: permiso municipal original.",
-   "costo": "Costo de conexión + suscripción de acciones.",
+   "gestion": "Conexión trifásica – familiar propietario",
+   "quien": "Propietario, uso familiar.",
+   "documentacion": "Fotocopia del DNI; escritura o boleto de compraventa certificado por escribano; certificado de instalación eléctrica apta (Ley Prov. N° 10.281); declaración de potencia; correo electrónico y celular de contacto.",
+   "costo": "Conexión urbana $192.429,40 / rural $262.020,24 + acciones $12.",
    "canales": "Presencial / Web",
    "intervienen": "Oficina Técnica; Técnico de Servicios",
-   "fuente": "IO 02.01 §5.1.1 / Fig. 2",
+   "fuente": "Tarifario vigente",
    "servicio": "Energía",
    "validacion": {
     "ventas": "",
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [
+    [
+     "Precios",
+     "Conexión urbana",
+     "$192.429,40"
+    ],
+    [
+     "Precios",
+     "Conexión rural",
+     "$262.020,24"
+    ],
+    [
+     "Precios",
+     "Traslado / transferencia",
+     "Mismo costo que la conexión"
+    ],
+    [
+     "Precios",
+     "Acciones familia",
+     "$12"
+    ],
+    [
+     "Precios",
+     "Incremento de capacidad (c/u 1)",
+     "US$130 (dólar oficial)"
+    ]
+   ],
+   "notas": [
+    "Permiso municipal original (solo si es a estrenar).",
+    "Si hace el trámite otra persona: autorización con fotocopia del DNI."
+   ]
   },
   {
    "id": "E04",
-   "gestion": "Conexión trifásica – inquilino",
-   "quien": "Inquilino con garante o depósito.",
-   "documentacion": "Igual que E02 + declaración de potencia. (La figura menciona también 'Escritura copia'); si es a estrenar: permiso municipal original.",
-   "costo": "Costo de conexión + acciones + depósito si no hay garante.",
+   "gestion": "Conexión trifásica – familiar inquilino",
+   "quien": "Inquilino, uso familiar, con depósito en garantía o garante.",
+   "documentacion": "Fotocopia del DNI; contrato de alquiler con firma del propietario certificada (juez de paz o escribano); certificado de instalación eléctrica apta (Ley Prov. N° 10.281); depósito en garantía o garante (titular de luz y propietario); declaración de potencia; correo electrónico y celular de contacto.",
+   "costo": "Conexión urbana $192.429,40 / rural $262.020,24 + acciones $12 + depósito según potencia.",
    "canales": "Presencial / Web",
    "intervienen": "Garante: socio y propietario",
-   "fuente": "IO 02.01 §5.1.1 / Fig. 2",
+   "fuente": "Tarifario vigente",
    "servicio": "Energía",
    "validacion": {
     "ventas": "",
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [
+    [
+     "Precios",
+     "Conexión urbana",
+     "$192.429,40"
+    ],
+    [
+     "Precios",
+     "Conexión rural",
+     "$262.020,24"
+    ],
+    [
+     "Precios",
+     "Traslado / transferencia",
+     "Mismo costo que la conexión"
+    ],
+    [
+     "Precios",
+     "Acciones familia",
+     "$12"
+    ],
+    [
+     "Precios",
+     "Incremento de capacidad (c/u 1)",
+     "US$130 (dólar oficial)"
+    ],
+    [
+     "Depósito en garantía",
+     "Hasta 10 kW",
+     "$474.031,30"
+    ],
+    [
+     "Depósito en garantía",
+     "Más de 10 kW",
+     "$632.041,75"
+    ]
+   ],
+   "notas": [
+    "Permiso municipal original (solo si es a estrenar).",
+    "Si hace el trámite otra persona: autorización con fotocopia del DNI.",
+    "Forma de pago: la conexión se abona al momento del trámite. Con depósito: 50% al inicio y el saldo en 2 cuotas en la boleta."
+   ]
+  },
+  {
+   "id": "E15",
+   "servicio": "Energía",
+   "gestion": "Conexión monofásica – comercial propietario",
+   "quien": "Propietario, uso comercial.",
+   "documentacion": "Fotocopia del DNI; escritura o boleto de compraventa certificado por escribano; certificado de instalación eléctrica apta (Ley Prov. N° 10.281); inscripción en ARCA; correo electrónico y celular de contacto.",
+   "costo": "Conexión $82.984,05 + acciones comercio $16.",
+   "canales": "Presencial / Web",
+   "intervienen": "",
+   "fuente": "Tarifario vigente",
+   "validacion": {
+    "ventas": "",
+    "call_center": "",
+    "mesa_informes": ""
+   },
+   "observaciones": "",
+   "precios": [
+    [
+     "Precios",
+     "Conexión",
+     "$82.984,05"
+    ],
+    [
+     "Precios",
+     "Traslado",
+     "$82.984,05"
+    ],
+    [
+     "Precios",
+     "Transferencia",
+     "$82.984,05"
+    ],
+    [
+     "Precios",
+     "Reconexión",
+     "$12.656,53"
+    ],
+    [
+     "Precios",
+     "Acciones comercio",
+     "$16"
+    ]
+   ],
+   "notas": [
+    "Permiso municipal original (solo si es a estrenar).",
+    "Declaración de potencia (a partir de la 3ra conexión en el mismo domicilio).",
+    "Contrato social (solo si es una sociedad).",
+    "Si hace el trámite otra persona: autorización con fotocopia del DNI."
+   ]
+  },
+  {
+   "id": "E16",
+   "servicio": "Energía",
+   "gestion": "Conexión monofásica – comercial inquilino",
+   "quien": "Inquilino, uso comercial, con depósito en garantía o garante.",
+   "documentacion": "Fotocopia del DNI; contrato de alquiler con firma del propietario certificada (juez de paz o escribano); certificado de instalación eléctrica apta (Ley Prov. N° 10.281); depósito en garantía o garante (titular de luz y propietario); inscripción en ARCA; correo electrónico y celular de contacto.",
+   "costo": "Conexión $82.984,05 + acciones $16 + depósito hasta 10 kW $474.031,30 (si no hay garante).",
+   "canales": "Presencial / Web",
+   "intervienen": "",
+   "fuente": "Tarifario vigente",
+   "validacion": {
+    "ventas": "",
+    "call_center": "",
+    "mesa_informes": ""
+   },
+   "observaciones": "",
+   "precios": [
+    [
+     "Precios",
+     "Conexión",
+     "$82.984,05"
+    ],
+    [
+     "Precios",
+     "Traslado",
+     "$82.984,05"
+    ],
+    [
+     "Precios",
+     "Transferencia",
+     "$82.984,05"
+    ],
+    [
+     "Precios",
+     "Reconexión",
+     "$12.656,53"
+    ],
+    [
+     "Precios",
+     "Acciones comercio",
+     "$16"
+    ],
+    [
+     "Depósito en garantía",
+     "Hasta 10 kW",
+     "$474.031,30"
+    ]
+   ],
+   "notas": [
+    "Permiso municipal original (solo si es a estrenar).",
+    "Contrato social (solo si es una sociedad).",
+    "Declaración de potencia (a partir de la 3ra conexión en el mismo domicilio).",
+    "Si hace el trámite otra persona: autorización con fotocopia del DNI.",
+    "Forma de pago: la conexión se abona al momento del trámite. Con depósito: 50% al inicio y el saldo en 2 cuotas en la boleta."
+   ]
+  },
+  {
+   "id": "E17",
+   "servicio": "Energía",
+   "gestion": "Conexión trifásica – comercial propietario",
+   "quien": "Propietario, uso comercial.",
+   "documentacion": "Fotocopia del DNI; escritura o boleto de compraventa certificado por escribano; certificado de instalación eléctrica apta (Ley Prov. N° 10.281); inscripción en ARCA; contrato social; declaración de potencia; correo electrónico y celular de contacto.",
+   "costo": "Conexión urbana $192.429,40 / rural $262.020,24 + acciones $16.",
+   "canales": "Presencial / Web",
+   "intervienen": "",
+   "fuente": "Tarifario vigente",
+   "validacion": {
+    "ventas": "",
+    "call_center": "",
+    "mesa_informes": ""
+   },
+   "observaciones": "",
+   "precios": [
+    [
+     "Precios",
+     "Conexión urbana",
+     "$192.429,40"
+    ],
+    [
+     "Precios",
+     "Conexión rural",
+     "$262.020,24"
+    ],
+    [
+     "Precios",
+     "Traslado / transferencia",
+     "Mismo costo que la conexión"
+    ],
+    [
+     "Precios",
+     "Acciones comercio",
+     "$16"
+    ],
+    [
+     "Precios",
+     "Incremento de capacidad (c/u 1)",
+     "US$130 (dólar oficial)"
+    ]
+   ],
+   "notas": [
+    "Permiso municipal original (solo si es a estrenar).",
+    "Contrato social (solo si es una sociedad).",
+    "Si hace el trámite otra persona: autorización con fotocopia del DNI."
+   ]
+  },
+  {
+   "id": "E18",
+   "servicio": "Energía",
+   "gestion": "Conexión trifásica – comercial inquilino",
+   "quien": "Inquilino, uso comercial, con depósito en garantía o garante.",
+   "documentacion": "Fotocopia del DNI; contrato de alquiler con firma del propietario certificada (juez de paz o escribano); certificado de instalación eléctrica apta (Ley Prov. N° 10.281); depósito en garantía o garante (titular de luz y propietario); inscripción en ARCA; declaración de potencia; correo electrónico y celular de contacto.",
+   "costo": "Conexión urbana $192.429,40 / rural $262.020,24 + acciones $16 + depósito según potencia.",
+   "canales": "Presencial / Web",
+   "intervienen": "",
+   "fuente": "Tarifario vigente",
+   "validacion": {
+    "ventas": "",
+    "call_center": "",
+    "mesa_informes": ""
+   },
+   "observaciones": "",
+   "precios": [
+    [
+     "Precios",
+     "Conexión urbana",
+     "$192.429,40"
+    ],
+    [
+     "Precios",
+     "Conexión rural",
+     "$262.020,24"
+    ],
+    [
+     "Precios",
+     "Traslado / transferencia",
+     "Mismo costo que la conexión"
+    ],
+    [
+     "Precios",
+     "Acciones comercio",
+     "$16"
+    ],
+    [
+     "Precios",
+     "Incremento de capacidad (c/u 1)",
+     "US$130 (dólar oficial)"
+    ],
+    [
+     "Depósito en garantía",
+     "Hasta 10 kW",
+     "$474.031,30"
+    ],
+    [
+     "Depósito en garantía",
+     "Más de 10 kW",
+     "$632.041,75"
+    ]
+   ],
+   "notas": [
+    "Permiso municipal original (solo si es a estrenar).",
+    "Contrato social (solo si es una sociedad).",
+    "Si hace el trámite otra persona: autorización con fotocopia del DNI.",
+    "Forma de pago: la conexión se abona al momento del trámite. Con depósito: 50% al inicio y el saldo en 2 cuotas en la boleta."
+   ]
   },
   {
    "id": "E06",
@@ -90,7 +449,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "E07",
@@ -107,14 +468,16 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "E08",
    "gestion": "Reconexión",
    "quien": "Con deuda paga. Corte > 30 días: titular o autorización del titular.",
    "documentacion": "Si el medidor fue retirado: certificado apto + inspección. Firma declaración jurada.",
-   "costo": "Se cobra reconexión.",
+   "costo": "Monofásica: $12.656,53.",
    "canales": "Presencial / Caja (pedidos por WhatsApp 'Teletrabajo')",
    "intervienen": "Facturación (deuda); Técnico de Servicios",
    "fuente": "IO 02.01 §5.1.2",
@@ -124,14 +487,16 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "E09",
    "gestion": "Cambio de titularidad / razón social",
    "quien": "Entre inquilinos, inquilino↔propietario o por fallecimiento. Vienen ambas partes.",
    "documentacion": "Toma de lectura 2-3 días antes. Garante o depósito del nuevo titular. Certificado apto si corresponde (inspección de monolito).",
-   "costo": "Cambio de nombre + suscripción de acciones. Al saliente se le hace nota de crédito por su depósito.",
+   "costo": "Transferencia monofásica: $82.984,05. Trifásica: mismo costo que la conexión. Al saliente se le hace nota de crédito por su depósito.",
    "canales": "Presencial",
    "intervienen": "Facturación (lectura); Banco de Sangre si hay adherentes; Servicios sociales (se transfieren o se dan de baja)",
    "fuente": "IO 02.01 §5.1.3",
@@ -141,7 +506,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "E10",
@@ -158,14 +525,16 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "E11",
    "gestion": "Traslado",
    "quien": "Sin deuda y con disponibilidad técnica en el nuevo domicilio.",
    "documentacion": "Inquilino: contrato con firmas certificadas + renovación de garantía. Propietario: escritura.",
-   "costo": "Se cobra traslado.",
+   "costo": "Monofásica: $82.984,05. Trifásica: mismo costo que la conexión.",
    "canales": "Presencial",
    "intervienen": "Oficina Técnica; Técnico de Servicios",
    "fuente": "IO 02.01 §5.1.5",
@@ -175,7 +544,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "E12",
@@ -192,7 +563,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "E13",
@@ -209,7 +582,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "E14",
@@ -226,24 +601,59 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "A01",
    "gestion": "Conexión urbana o rural – propietario",
    "quien": "Propietario.",
-   "documentacion": "DNI; autorización municipal o final de obra; escritura o boleto; monolito listo.",
-   "costo": "Tarifa urbana 'Con medidor T1' o 'Rural T1'. Firma DJ, domicilio electrónico y financiación.",
+   "documentacion": "Fotocopia del DNI; permiso municipal original; escritura o boleto de compraventa certificado por escribano.",
+   "costo": "Urbana $108.808,20 / rural $217.616,38 + acciones $20. Materiales: consultar en el día.",
    "canales": "Presencial / Web",
    "intervienen": "Oficina Técnica",
-   "fuente": "IO 02.02 §5.1-5.2 / Fig. 1",
+   "fuente": "Tarifario vigente",
    "servicio": "Agua",
    "validacion": {
     "ventas": "",
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [
+    [
+     "Precios de conexión",
+     "Conexión urbana",
+     "$108.808,20"
+    ],
+    [
+     "Precios de conexión",
+     "Conexión rural",
+     "$217.616,38"
+    ],
+    [
+     "Precios de conexión",
+     "Materiales",
+     "Consultar en el día"
+    ],
+    [
+     "Precios de conexión",
+     "Derecho de uso de red (solo rural)",
+     "$5.039,76"
+    ],
+    [
+     "Precios de conexión",
+     "Quita de cepo",
+     "$13.164,25"
+    ],
+    [
+     "Precios de conexión",
+     "Suscripción de acciones de agua",
+     "$20"
+    ]
+   ],
+   "notas": []
   },
   {
    "id": "A02",
@@ -260,7 +670,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "A03",
@@ -277,7 +689,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "A04",
@@ -294,24 +708,28 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "A05",
    "gestion": "Reconexión (quita de cepo)",
-   "quien": "SIN DESARROLLAR.",
+   "quien": "Con deuda paga.",
    "documentacion": "",
-   "costo": "",
+   "costo": "$13.164,25.",
    "canales": "Presencial / Web",
    "intervienen": "",
-   "fuente": "IO 02.02 §5.2.3",
+   "fuente": "Tarifario vigente",
    "servicio": "Agua",
    "validacion": {
     "ventas": "",
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "A06",
@@ -328,7 +746,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "A07",
@@ -345,7 +765,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "A08",
@@ -362,14 +784,16 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "T01",
    "gestion": "Teléfono – conexión",
    "quien": "Titular de energía en el domicilio / propietario / inquilino.",
    "documentacion": "Titular de energía: solo DNI. Propietario sin energía a su nombre: DNI + escritura. Inquilino: DNI + contrato con firmas certificadas + garante (cualquier asociado titular de energía).",
-   "costo": "Depósito en garantía si corresponde. Tarifa residencial o comercial. Opciones: cobre o fibra, figura en guía, aparato común o especial.",
+   "costo": "Conexión $1.220; solo teléfono por fibra $17.011,93. Mantenimiento mensual: familiar $4.680 / comercial $12.300.",
    "canales": "Presencial / Web / Teléfono",
    "intervienen": "Número según localidad (libro CNC)",
    "fuente": "IO 02.03 §5.1.1",
@@ -379,65 +803,235 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [
+    [
+     "Tarifas",
+     "Conexión",
+     "$1.220"
+    ],
+    [
+     "Tarifas",
+     "Conexión solo teléfono (por fibra)",
+     "$17.011,93"
+    ],
+    [
+     "Tarifas",
+     "Mantenimiento familiar",
+     "$4.680"
+    ],
+    [
+     "Tarifas",
+     "Mantenimiento comercial",
+     "$12.300"
+    ]
+   ],
+   "notas": []
   },
   {
    "id": "T02",
-   "gestion": "Internet por fibra óptica – conexión",
-   "quien": "Mismos requisitos que teléfono. Si no tiene energía a su nombre, debe conectar teléfono antes (para ser asociado).",
-   "documentacion": "Igual que T01.",
-   "costo": "Inscripción $0. Conexión financiada en 4 cuotas sin interés.",
+   "gestion": "Internet por fibra (GPON) – socio",
+   "quien": "Socio de la Cooperativa.",
+   "documentacion": "Inquilino sin energía a su nombre: DNI; contrato de alquiler con firma del propietario certificada; garante (titular del servicio de energía en la Cooperativa).",
+   "costo": "Conexión $29.645 en 4 cuotas de $7.411,25.",
    "canales": "Presencial / Web / Teléfono",
    "intervienen": "",
-   "fuente": "IO 02.03 §5.2.1",
+   "fuente": "Tarifario vigente",
    "servicio": "TIC",
    "validacion": {
     "ventas": "",
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [
+    [
+     "Conexión",
+     "4 cuotas de $7.411,25",
+     "$29.645"
+    ],
+    [
+     "Tarifas mensuales",
+     "Hasta 10 Mb (jubilados)",
+     "$7.337,73"
+    ],
+    [
+     "Tarifas mensuales",
+     "Hasta 50 Mb",
+     "$14.409,76"
+    ],
+    [
+     "Tarifas mensuales",
+     "Hasta 100 Mb",
+     "$21.630,26"
+    ],
+    [
+     "Tarifas mensuales",
+     "Hasta 200 Mb",
+     "$25.815,17"
+    ],
+    [
+     "Tarifas mensuales",
+     "Hasta 600 Mb",
+     "$39.280,31"
+    ]
+   ],
+   "notas": [
+    "Pack SENSA: con 100 Mb o 50 Mb + TV, sin cargo adicional.",
+    "Router en comodato. En caso de rotura o robo responde el usuario. Permanencia mínima 1 año."
+   ]
+  },
+  {
+   "id": "T12",
+   "servicio": "TIC",
+   "gestion": "Internet por fibra (GPON) – no socio",
+   "quien": "No socio de la Cooperativa.",
+   "documentacion": "Inquilino sin energía a su nombre: DNI; contrato de alquiler con firma del propietario certificada.",
+   "costo": "Conexión $60.500 en 6 cuotas de $10.083,33.",
+   "canales": "Presencial / Web / Teléfono",
+   "intervienen": "",
+   "fuente": "Tarifario vigente",
+   "validacion": {
+    "ventas": "",
+    "call_center": "",
+    "mesa_informes": ""
+   },
+   "observaciones": "",
+   "precios": [
+    [
+     "Conexión",
+     "6 cuotas de $10.083,33",
+     "$60.500"
+    ],
+    [
+     "Tarifas mensuales",
+     "Hasta 100 Mb",
+     "$21.630,26"
+    ],
+    [
+     "Tarifas mensuales",
+     "Hasta 200 Mb",
+     "$25.815,17"
+    ],
+    [
+     "Tarifas mensuales",
+     "Hasta 600 Mb",
+     "$39.280,31"
+    ]
+   ],
+   "notas": [
+    "Pack SENSA: con 100 Mb o 50 Mb + TV, sin cargo adicional.",
+    "Router en comodato. En caso de rotura o robo responde el usuario. Permanencia mínima 1 año."
+   ]
   },
   {
    "id": "T03",
    "gestion": "Internet inalámbrico – conexión",
    "quien": "Puede no ser socio. Requiere verificación geográfica de recepción.",
    "documentacion": "Garante o 2 meses de abono por adelantado.",
-   "costo": "Equipo vendido por la Cooperativa: contado o hasta 6 cuotas.",
+   "costo": "Equipo aprox. $310.000 financiado en 6 cuotas con interés. Instalación a cargo del usuario.",
    "canales": "Presencial",
    "intervienen": "Encargado de internet inalámbrico; Depósito (factura equipo)",
-   "fuente": "IO 02.03 §5.2.2",
+   "fuente": "Tarifario vigente",
    "servicio": "TIC",
    "validacion": {
     "ventas": "",
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [
+    [
+     "Tarifas mensuales",
+     "Hasta 10 Mb",
+     "$30.575"
+    ],
+    [
+     "Tarifas mensuales",
+     "Hasta 20 Mb",
+     "$43.215"
+    ],
+    [
+     "Tarifas mensuales",
+     "Hasta 30 Mb",
+     "$55.855"
+    ],
+    [
+     "Tarifas mensuales",
+     "Hasta 60 Mb",
+     "$71.350"
+    ]
+   ],
+   "notas": [
+    "Equipo: aprox. $310.000 financiado en 6 cuotas con interés.",
+    "Instalación a cargo del usuario. Sujeto a topografía.",
+    "Bonificación del 30% en el abono."
+   ]
   },
   {
    "id": "T04",
    "gestion": "Televisión (IPTV) – conexión",
    "quien": "Ser socio (energía, agua o teléfono a su nombre) y tener internet. Si solo quiere TV: prestación de internet 'solo IPTV' sin abono.",
    "documentacion": "Garantía: la misma cargada en internet.",
-   "costo": "Sin costo de conexión si adhiere a pago directo en ese momento.",
+   "costo": "Instalación 1 TV $17.011,93 (aparato en comodato), financiada hasta 6 cuotas con interés o contado. Gratis adhiriendo a débito automático.",
    "canales": "Presencial / Web / Teléfono",
    "intervienen": "",
-   "fuente": "IO 02.03 §5.3.1",
+   "fuente": "Tarifario vigente",
    "servicio": "TIC",
    "validacion": {
     "ventas": "",
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [
+    [
+     "Instalación",
+     "1 TV (aparato en comodato)",
+     "$17.011,93"
+    ],
+    [
+     "Instalación",
+     "2 TV en adelante",
+     "Consultar precio"
+    ],
+    [
+     "Abono mensual",
+     "1 TV",
+     "$12.160"
+    ],
+    [
+     "Abono mensual",
+     "2 TV",
+     "$13.596"
+    ],
+    [
+     "Abono mensual",
+     "3 TV",
+     "$16.580,33"
+    ],
+    [
+     "Abono mensual",
+     "4 TV",
+     "$19.564,57"
+    ],
+    [
+     "Abono mensual",
+     "5 TV",
+     "$22.549,14"
+    ]
+   ],
+   "notas": [
+    "Instalación financiada hasta 6 cuotas con interés o de contado. Gratis adhiriendo a débito automático.",
+    "Pack SENSA: 100 Mb o 50 Mb + TV, sin cargo. Router y primer decodificador en comodato."
+   ]
   },
   {
    "id": "T05",
-   "gestion": "TV – decodificadores adicionales (2 o 3 TV)",
+   "gestion": "TV – televisores adicionales (2 o más)",
    "quien": "Cliente con IPTV.",
    "documentacion": "—",
-   "costo": "Se facturan y financian los decodificadores.",
+   "costo": "Instalación de 2 TV en adelante: consultar precio. Abono según cantidad de TV (ver T04).",
    "canales": "Presencial",
    "intervienen": "Depósito (factura); Facturación (financia)",
    "fuente": "IO 02.03 §5.3.1",
@@ -447,7 +1041,59 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
+  },
+  {
+   "id": "T13",
+   "servicio": "TIC",
+   "gestion": "Packs de TV adicionales",
+   "quien": "Cliente con IPTV.",
+   "documentacion": "",
+   "costo": "Se suman al abono mensual.",
+   "canales": "Presencial / Web / Teléfono",
+   "intervienen": "",
+   "fuente": "Tarifario vigente",
+   "validacion": {
+    "ventas": "",
+    "call_center": "",
+    "mesa_informes": ""
+   },
+   "observaciones": "",
+   "precios": [
+    [
+     "Packs adicionales",
+     "Grabación DVR",
+     "$3.550"
+    ],
+    [
+     "Packs adicionales",
+     "Pack Adultos",
+     "$2.953"
+    ],
+    [
+     "Packs adicionales",
+     "Pack Fox",
+     "$7.180"
+    ],
+    [
+     "Packs adicionales",
+     "Pack Fútbol",
+     "$21.960"
+    ],
+    [
+     "Packs adicionales",
+     "Pack HBO",
+     "$8.820"
+    ],
+    [
+     "Packs Sensa",
+     "Sensa Full",
+     "$11.721"
+    ]
+   ],
+   "notas": []
   },
   {
    "id": "T06",
@@ -464,7 +1110,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "T07",
@@ -481,7 +1129,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "T08",
@@ -498,7 +1148,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "T09",
@@ -515,7 +1167,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "T10",
@@ -532,7 +1186,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "T11",
@@ -549,7 +1205,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "M01",
@@ -566,7 +1224,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "M02",
@@ -583,7 +1243,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "M03",
@@ -600,7 +1262,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "M04",
@@ -617,7 +1281,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "M05",
@@ -634,7 +1300,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "M06",
@@ -651,7 +1319,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "M07",
@@ -668,7 +1338,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "M08",
@@ -685,7 +1357,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "O01",
@@ -702,7 +1376,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "O02",
@@ -719,7 +1395,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "O03",
@@ -736,7 +1414,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "O04",
@@ -753,7 +1433,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "O05",
@@ -770,7 +1452,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "O06",
@@ -787,41 +1471,66 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "O07",
-   "gestion": "Seguro de vida / subsidio por fallecimiento (Red Bienestar)",
+   "gestion": "Subsidio por fallecimiento (Red Bienestar)",
    "quien": "Socio con energía o agua activa.",
-   "documentacion": "DNI de 2 beneficiarios; planilla firmada.",
-   "costo": "—",
+   "documentacion": "DNI de uno o dos beneficiarios mayores de 18 años; firma del titular de la energía.",
+   "costo": "Consultar.",
    "canales": "Presencial",
    "intervienen": "",
-   "fuente": "PG 02 Servicios sociales / Anexo IV",
+   "fuente": "Tarifario vigente",
    "servicio": "Otros servicios",
    "validacion": {
     "ventas": "",
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [
+    [
+     "Subsidio por fallecimiento",
+     "Costo",
+     "Consultar"
+    ]
+   ],
+   "notas": []
   },
   {
    "id": "O08",
    "gestion": "Servicio de sepelio",
    "quien": "Socio con energía o agua activa.",
-   "documentacion": "Libreta de familia o DNI del grupo familiar; planilla firmada.",
-   "costo": "Se cobra inscripción.",
+   "documentacion": "DNI de todos los integrantes del grupo familiar; libreta de familia o certificado de convivencia; firma del titular de la energía.",
+   "costo": "Grupo familiar (matrimonio e hijos menores de 18) $6.000; adicionales $3.000.",
    "canales": "Presencial",
    "intervienen": "",
-   "fuente": "PG 02 §5.7.2 / Anexo III",
+   "fuente": "Tarifario vigente",
    "servicio": "Otros servicios",
    "validacion": {
     "ventas": "",
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [
+    [
+     "Servicio de sepelio",
+     "Grupo familiar (matrimonio e hijos menores de 18)",
+     "$6.000"
+    ],
+    [
+     "Servicio de sepelio",
+     "Adicionales",
+     "$3.000"
+    ]
+   ],
+   "notas": [
+    "Período de carencia: 6 meses desde la contratación del servicio."
+   ]
   },
   {
    "id": "O09",
@@ -838,7 +1547,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "O10",
@@ -855,7 +1566,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "G01",
@@ -872,7 +1585,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "G02",
@@ -889,7 +1604,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "G03",
@@ -906,7 +1623,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "G04",
@@ -923,7 +1642,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "G05",
@@ -940,7 +1661,9 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   },
   {
    "id": "G06",
@@ -957,22 +1680,24 @@
     "call_center": "",
     "mesa_informes": ""
    },
-   "observaciones": ""
+   "observaciones": "",
+   "precios": [],
+   "notas": []
   }
  ],
  "criterios": [
   {
    "tema": "Garante",
-   "energia": "Socio de la Cooperativa y propietario (según figuras; el texto solo dice socio).",
+   "energia": "Titular de luz y propietario (tarifario vigente).",
    "agua": "A confirmar si aplica (servicio a nombre del propietario).",
-   "tic": "Teléfono/internet: cualquier asociado titular de energía. Inalámbrico: garante o 2 meses de abono adelantado.",
+   "tic": "Internet socio inquilino: titular del servicio de energía. No socio: no figura. Inalámbrico: a confirmar.",
    "movilcoop": "No aplica.",
    "sociales": "No aplica.",
    "criterio_unico": ""
   },
   {
    "tema": "Depósito en garantía",
-   "energia": "Si no hay garante: 4 cuotas, la 1ª de contado. Se devuelve en la baja.",
+   "energia": "Familiar $316.020,89; comercial o trifásica hasta 10 kW $474.031,30; más de 10 kW $632.041,75. Pago: 50% al inicio y saldo en 2 cuotas.",
    "agua": "A confirmar.",
    "tic": "Mencionado, sin monto ni forma de pago.",
    "movilcoop": "No aplica.",
@@ -983,7 +1708,7 @@
    "tema": "¿Hay que ser socio?",
    "energia": "No.",
    "agua": "Propietario.",
-   "tic": "Fibra: sí o conectar teléfono antes. TV: sí + internet. Inalámbrico: no.",
+   "tic": "Internet fibra: hay tarifa para socio y para no socio. TV: socio + internet. Inalámbrico: no.",
    "movilcoop": "Titular de la luz con 6 meses.",
    "sociales": "Energía o agua activa.",
    "criterio_unico": ""
@@ -1085,8 +1810,8 @@
    "detalle": "Texto: socio. Figuras: socio y propietario.",
    "fuente": "IO 02.01 §5.1.1 / Fig. 1-2",
    "quien_define": "",
-   "estado": "Abierto",
-   "resolucion": ""
+   "estado": "Resuelto",
+   "resolucion": "Tarifario vigente: garante titular de luz y propietario."
   },
   {
    "n": 5,
@@ -1107,8 +1832,8 @@
    "detalle": "Monofásica propietario sin foto firmada (trifásica sí); 'Escritura copia' en trifásica inquilino; numeración repetida; no queda claro si ARCA/IIBB es solo comercio.",
    "fuente": "IO 02.01 Fig. 1-2",
    "quien_define": "",
-   "estado": "Abierto",
-   "resolucion": ""
+   "estado": "Resuelto",
+   "resolucion": "Se reemplazaron por los requisitos del tarifario vigente. ARCA solo para comercial."
   },
   {
    "n": 7,
@@ -1173,8 +1898,8 @@
    "detalle": "Pide garante si es inquilino, pero el servicio va siempre a nombre del propietario; la figura solo tiene columna propietario.",
    "fuente": "IO 02.02 §5.2 / §5.2.5",
    "quien_define": "",
-   "estado": "Abierto",
-   "resolucion": ""
+   "estado": "En revisión",
+   "resolucion": "El tarifario vigente solo muestra requisitos para propietario."
   },
   {
    "n": 13,
@@ -1184,8 +1909,8 @@
    "detalle": "'Patri: falta desarrollar'.",
    "fuente": "IO 02.02 §5.2.3",
    "quien_define": "",
-   "estado": "Abierto",
-   "resolucion": ""
+   "estado": "En revisión",
+   "resolucion": "El tarifario vigente tiene el precio ($13.164,25); falta el circuito."
   },
   {
    "n": 14,
@@ -1200,13 +1925,13 @@
   },
   {
    "n": 15,
-   "servicio": "TIC",
+   "servicio": "Energía / TIC",
    "tipo": "A confirmar",
    "tema": "Monto del depósito en garantía",
-   "detalle": "Se menciona pero no se indica monto ni forma de pago.",
+   "detalle": "Energía: montos definidos en el tarifario vigente. TIC: sigue sin monto.",
    "fuente": "IO 02.03 §5.1.1",
    "quien_define": "",
-   "estado": "Abierto",
+   "estado": "En revisión",
    "resolucion": ""
   },
   {
@@ -1296,6 +2021,105 @@
    "quien_define": "",
    "estado": "Abierto",
    "resolucion": ""
+  },
+  {
+   "n": 24,
+   "servicio": "TIC",
+   "tipo": "Contradicción",
+   "tema": "Internet para no socios",
+   "detalle": "El IO 02.03 dice que quien no tiene energía debe conectar teléfono antes; el tarifario vigente tiene conexión para no socios (6 cuotas de $10.083,33).",
+   "fuente": "IO 02.03 §5.2.1 / Tarifario",
+   "quien_define": "",
+   "estado": "Abierto",
+   "resolucion": ""
+  },
+  {
+   "n": 25,
+   "servicio": "TIC",
+   "tipo": "A confirmar",
+   "tema": "Garante de internet para no socio inquilino",
+   "detalle": "El tarifario no pide garante al inquilino no socio; al socio inquilino sí.",
+   "fuente": "Tarifario",
+   "quien_define": "",
+   "estado": "Abierto",
+   "resolucion": ""
+  },
+  {
+   "n": 26,
+   "servicio": "TIC",
+   "tipo": "A confirmar",
+   "tema": "Garantía del internet inalámbrico",
+   "detalle": "El IO pide garante o 2 meses de abono adelantado; el tarifario no lo menciona.",
+   "fuente": "IO 02.03 §5.2.2 / Tarifario",
+   "quien_define": "",
+   "estado": "Abierto",
+   "resolucion": ""
+  },
+  {
+   "n": 27,
+   "servicio": "Energía",
+   "tipo": "Contradicción",
+   "tema": "Forma de pago del depósito",
+   "detalle": "IO: 4 cuotas, la 1ª de contado. Tarifario: 50% al inicio y el saldo en 2 cuotas en la boleta.",
+   "fuente": "IO 02.01 Fig. 1 / Tarifario",
+   "quien_define": "",
+   "estado": "Abierto",
+   "resolucion": ""
+  },
+  {
+   "n": 28,
+   "servicio": "Energía",
+   "tipo": "A confirmar",
+   "tema": "Foto del monolito",
+   "detalle": "El IO la pide; el tarifario vigente no la incluye.",
+   "fuente": "IO 02.01 Fig. 1-2 / Tarifario",
+   "quien_define": "",
+   "estado": "Abierto",
+   "resolucion": ""
+  },
+  {
+   "n": 29,
+   "servicio": "Energía",
+   "tipo": "A confirmar",
+   "tema": "Cantidad de certificados",
+   "detalle": "IO: 2 certificados (usuario y punto de medición). Tarifario: un certificado apto (Ley 10.281).",
+   "fuente": "IO 02.01 §5.1.1 / Tarifario",
+   "quien_define": "",
+   "estado": "Abierto",
+   "resolucion": ""
+  },
+  {
+   "n": 30,
+   "servicio": "Energía",
+   "tipo": "A confirmar",
+   "tema": "Incremento de capacidad trifásica",
+   "detalle": "Tarifario: 'Incremento capacidad (C/U 1) US$130 dólar oficial'. Aclarar a qué corresponde la unidad.",
+   "fuente": "Tarifario",
+   "quien_define": "",
+   "estado": "Abierto",
+   "resolucion": ""
+  },
+  {
+   "n": 31,
+   "servicio": "Agua",
+   "tipo": "A confirmar",
+   "tema": "Monolito y final de obra en agua",
+   "detalle": "El IO pide monolito y autorización o final de obra; el tarifario pide solo DNI, permiso municipal original y escritura.",
+   "fuente": "IO 02.02 Fig. 1 / Tarifario",
+   "quien_define": "",
+   "estado": "Abierto",
+   "resolucion": ""
+  },
+  {
+   "n": 32,
+   "servicio": "Energía",
+   "tipo": "A confirmar",
+   "tema": "Ingresos Brutos en comercios",
+   "detalle": "El IO pedía ARCA e Ingresos Brutos; el tarifario pide solo ARCA.",
+   "fuente": "IO 02.01 / Tarifario",
+   "quien_define": "",
+   "estado": "Abierto",
+   "resolucion": ""
   }
  ],
  "historial": [
@@ -1318,6 +2142,10 @@
   {
    "fecha": "2026-09-25",
    "cambio": "Se quitó 'impuesto provincial de Rentas' de la documentación: ya no se pide."
+  },
+  {
+   "fecha": "2026-09-25",
+   "cambio": "Se cruzó con el tarifario vigente: nuevos requisitos y precios de energía, agua, internet, TV, teléfono, sepelio y subsidio. Se agregaron E15-E18 (conexiones comerciales), T12 (internet no socio) y T13 (packs de TV). 9 pendientes nuevos y 2 resueltos."
   }
  ]
 }

@@ -87,6 +87,17 @@ details.card>summary::-webkit-details-marker{display:none}
 .facts .wide{grid-column:1/-1}
 .facts ul{margin:2px 0 0;padding-left:20px;display:grid;gap:3px;max-width:75ch}
 .facts li::marker{color:var(--c)}
+.cols{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:18px 28px}
+@media (max-width:760px){.cols{grid-template-columns:1fr}}
+.notes{display:grid;gap:6px;margin-top:10px}
+.note{border-left:3px solid var(--c);background:var(--surface-2);border-radius:4px;padding:6px 10px;font-size:13.5px}
+.prices{display:grid;gap:12px;align-content:start}
+.prices h4{margin:0 0 4px;font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-2);font-weight:600;font-family:var(--body)}
+.prices table{min-width:0;width:100%;font-size:14px}
+.prices td{padding:5px 0;border-bottom:1px dashed var(--line)}
+.prices td.v{text-align:right;font-weight:600;font-variant-numeric:tabular-nums;padding-left:12px;white-space:nowrap}
+.prices tr:last-child td{border-bottom:0}
+.lbl{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-2);font-weight:600;margin-bottom:2px}
 .val{display:flex;flex-wrap:wrap;gap:8px;align-items:center;border-top:1px dashed var(--line);padding-top:10px;font-size:13px}
 .val strong{font-weight:600;margin-right:2px}
 .obs{background:var(--accent-soft);border-radius:6px;padding:8px 10px;font-size:14px}
@@ -262,14 +273,25 @@ function card(g){
     el("span", {class:"id"}, g.id), el("span", {class:"title"}, g.gestion), flags,
     g.quien ? el("span", {class:"sub"}, g.quien) : null);
   const facts = el("dl", {class:"facts"});
-  [["Documentación", g.documentacion, true], ["Costo / qué se cobra", g.costo], ["Canales", g.canales]]
+  [["Documentación", g.documentacion, true], ["Costo / qué se cobra", (g.precios && g.precios.length) ? "" : g.costo], ["Canales", g.canales]]
     .forEach(([k, v, wide]) => { if (v && v !== "—") facts.append(el("div", {class: wide ? "wide" : ""}, el("dt", {}, k), el("dd", {}, wide ? toList(v) : v))); });
+  const left = el("div", {}, facts);
+  if (g.notas && g.notas.length) left.append(el("div", {class:"notes"}, ...g.notas.map(n => el("div", {class:"note"}, n))));
+  let main = left;
+  if (g.precios && g.precios.length) {
+    const prices = el("div", {class:"prices"});
+    const groups = [];
+    g.precios.forEach(([grp, c, v]) => { let G = groups.find(x => x.n === grp); if (!G) groups.push(G = {n:grp, r:[]}); G.r.push([c, v]); });
+    groups.forEach(G => prices.append(el("div", {}, el("h4", {}, G.n),
+      el("table", {}, el("tbody", {}, ...G.r.map(([c, v]) => el("tr", {}, el("td", {}, c), el("td", {class:"v"}, v))))))));
+    main = el("div", {class:"cols"}, left, prices);
+  }
   const val = el("div", {class:"val"});
   SECTORES.forEach(([k, name]) => {
     const v = g.validacion[k];
     val.append(el("span", {}, el("strong", {}, name + ":"), " "), pill(v || "Sin revisar", v ? VAL_CLASS[v] || "p-mute" : "p-mute"));
   });
-  const body = el("div", {class:"body"}, facts, val, g.observaciones ? el("div", {class:"obs"}, g.observaciones) : null);
+  const body = el("div", {class:"body"}, main, val, g.observaciones ? el("div", {class:"obs"}, g.observaciones) : null);
   return el("details", {class:"card", style:"--c:" + SVC[g.servicio].c}, sum, body);
 }
 
