@@ -10,8 +10,8 @@
   {
    "id": "E01",
    "gestion": "Conexión monofásica – propietario",
-   "quien": "Cualquier persona (socio o no). Si es a estrenar, ver E05.",
-   "documentacion": "DNI/CUIT/CUIL; escritura o boleto de compraventa; certificado de instalación eléctrica apta (usuario y punto de medición); contrato social si es sociedad; foto del monolito listo (Anexo III); impuesto provincial de Rentas; inscripción en ARCA e Ingresos Brutos.",
+   "quien": "Cualquier persona (socio o no).",
+   "documentacion": "DNI/CUIT/CUIL; escritura o boleto de compraventa; certificado de instalación eléctrica apta (usuario y punto de medición); contrato social si es sociedad; foto del monolito listo (Anexo III); impuesto provincial de Rentas; inscripción en ARCA e Ingresos Brutos; si es a estrenar: permiso municipal original.",
    "costo": "Costo de conexión + suscripción de acciones. Sin garantía.",
    "canales": "Presencial / Web",
    "intervienen": "Oficina Técnica (factibilidad); Técnico de Servicios (conexión)",
@@ -28,7 +28,7 @@
    "id": "E02",
    "gestion": "Conexión monofásica – inquilino",
    "quien": "Inquilino con garante o depósito en garantía.",
-   "documentacion": "DNI/CUIT/CUIL del inquilino, del propietario y del garante; contrato de alquiler con firmas certificadas (juez de paz o escribano); certificado apto (usuario y punto de medición); contrato social si es sociedad; foto impresa y firmada por el propietario del domicilio y monolito; monolito listo; Rentas; ARCA e IIBB.",
+   "documentacion": "DNI/CUIT/CUIL del inquilino, del propietario y del garante; contrato de alquiler con firmas certificadas (juez de paz o escribano); certificado apto (usuario y punto de medición); contrato social si es sociedad; foto impresa y firmada por el propietario del domicilio y monolito; monolito listo; Rentas; ARCA e IIBB; si es a estrenar: permiso municipal original.",
    "costo": "Costo de conexión + acciones + depósito en garantía (4 cuotas, 1ª de contado) si no hay garante. El depósito se devuelve en la baja.",
    "canales": "Presencial / Web",
    "intervienen": "Garante: socio de la Cooperativa y propietario",
@@ -45,7 +45,7 @@
    "id": "E03",
    "gestion": "Conexión trifásica – propietario",
    "quien": "Igual que monofásica + declaración de potencia.",
-   "documentacion": "Igual que E01 + foto impresa y firmada por el propietario del domicilio y monolito + declaración jurada de potencia instalada (RPG/RIO 02.01). ARCA e IIBB en caso de comercio.",
+   "documentacion": "Igual que E01 + foto impresa y firmada por el propietario del domicilio y monolito + declaración jurada de potencia instalada (RPG/RIO 02.01). ARCA e IIBB en caso de comercio; si es a estrenar: permiso municipal original.",
    "costo": "Costo de conexión + suscripción de acciones.",
    "canales": "Presencial / Web",
    "intervienen": "Oficina Técnica; Técnico de Servicios",
@@ -62,28 +62,11 @@
    "id": "E04",
    "gestion": "Conexión trifásica – inquilino",
    "quien": "Inquilino con garante o depósito.",
-   "documentacion": "Igual que E02 + declaración de potencia. (La figura menciona también 'Escritura copia').",
+   "documentacion": "Igual que E02 + declaración de potencia. (La figura menciona también 'Escritura copia'); si es a estrenar: permiso municipal original.",
    "costo": "Costo de conexión + acciones + depósito si no hay garante.",
    "canales": "Presencial / Web",
    "intervienen": "Garante: socio y propietario",
    "fuente": "IO 02.01 §5.1.1 / Fig. 2",
-   "servicio": "Energía",
-   "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
-   },
-   "observaciones": ""
-  },
-  {
-   "id": "E05",
-   "gestion": "Conexión en lugar a estrenar",
-   "quien": "Requiere factibilidad técnica afirmativa.",
-   "documentacion": "Autorización municipal.",
-   "costo": "—",
-   "canales": "Presencial",
-   "intervienen": "Oficina Técnica: si la factibilidad es negativa, el cliente habla con ellos.",
-   "fuente": "IO 02.01 §5.1.1",
    "servicio": "Energía",
    "validacion": {
     "ventas": "",
@@ -1327,6 +1310,10 @@
   {
    "fecha": "2026-09-25",
    "cambio": "Se quitaron los campos 'Intervienen / a quién se deriva' y 'Fuente' de las gestiones."
+  },
+  {
+   "fecha": "2026-09-25",
+   "cambio": "E01 a E04: se agregó 'si es a estrenar: permiso municipal original'. Se quitó E05 (quedó incluida en esas gestiones)."
   }
  ]
 }
