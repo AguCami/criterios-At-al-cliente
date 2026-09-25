@@ -1,0 +1,337 @@
+<title>Gestiones de Atención al Cliente</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{
+  --bg:#f3f5f4; --surface:#ffffff; --surface-2:#eaeeed; --ink:#18252c; --ink-2:#4a5a62; --line:#d5dcda;
+  --accent:#0d6b73; --accent-soft:#d6ecec;
+  --energia:#b86e12; --agua:#2767a8; --tic:#6a4bb0; --movil:#b3402f; --otros:#327d52; --general:#56656f;
+  --ok:#2f7d4a; --ok-bg:#dcefe2; --warn:#9a6300; --warn-bg:#fbeccb; --bad:#b0332a; --bad-bg:#f8dcd8; --mute:#5f6b71; --mute-bg:#e4e8e8;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#10181c; --surface:#172228; --surface-2:#1f2c33; --ink:#e4ecee; --ink-2:#a3b3b9; --line:#2d3c43;
+    --accent:#55c0c6; --accent-soft:#16383c;
+    --energia:#e3a14e; --agua:#6ea9e6; --tic:#a88ef0; --movil:#ec8474; --otros:#6fc394; --general:#9aabb6;
+    --ok:#7fd49c; --ok-bg:#183826; --warn:#f0c36b; --warn-bg:#3a2e12; --bad:#f29a90; --bad-bg:#3e1d1a; --mute:#a3b0b5; --mute-bg:#26343a;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#10181c; --surface:#172228; --surface-2:#1f2c33; --ink:#e4ecee; --ink-2:#a3b3b9; --line:#2d3c43;
+  --accent:#55c0c6; --accent-soft:#16383c;
+  --energia:#e3a14e; --agua:#6ea9e6; --tic:#a88ef0; --movil:#ec8474; --otros:#6fc394; --general:#9aabb6;
+  --ok:#7fd49c; --ok-bg:#183826; --warn:#f0c36b; --warn-bg:#3a2e12; --bad:#f29a90; --bad-bg:#3e1d1a; --mute:#a3b0b5; --mute-bg:#26343a;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:28px 60px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:clamp(26px,4vw,36px);letter-spacing:-.01em}
+h2{font-size:22px}
+.muted{color:var(--ink-2)}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
+header.top{display:grid;gap:10px;margin-bottom:22px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--ink-2)}
+
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:22px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;gap:2px;text-align:left;font:inherit;color:inherit;cursor:pointer}
+.stat:hover{border-color:var(--accent)}
+.stat .n{font-family:var(--display);font-size:26px;font-weight:700;font-variant-numeric:tabular-nums}
+.stat .l{font-size:13px;color:var(--ink-2)}
+.stat .bar{height:4px;border-radius:2px;background:var(--c,var(--accent));margin-top:6px}
+
+nav.tabs{display:flex;flex-wrap:wrap;gap:4px;border-bottom:1px solid var(--line);margin-bottom:18px}
+nav.tabs button{font:inherit;font-weight:600;background:none;border:0;border-bottom:3px solid transparent;padding:10px 14px;color:var(--ink-2);cursor:pointer}
+nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+nav.tabs .count{font-family:var(--mono);font-size:12px;background:var(--surface-2);border-radius:999px;padding:1px 7px;margin-left:6px}
+button:focus-visible,input:focus-visible,summary:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}
+.search{flex:1 1 260px;display:flex}
+.search input{width:100%;font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.chip .dot{width:9px;height:9px;border-radius:50%;background:var(--c)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip[aria-pressed="true"] .dot{box-shadow:0 0 0 2px var(--bg)}
+label.toggle{font-size:13px;display:inline-flex;gap:6px;align-items:center;color:var(--ink-2);cursor:pointer}
+
+.group{margin-bottom:26px}
+.group>h2{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.group>h2 .sw{width:12px;height:12px;border-radius:3px;background:var(--c)}
+.group>h2 small{font-family:var(--body);font-weight:400;font-size:14px;color:var(--ink-2)}
+.list{display:grid;gap:8px}
+
+details.card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:8px}
+details.card>summary{list-style:none;cursor:pointer;padding:12px 14px;display:grid;grid-template-columns:auto 1fr auto;gap:4px 12px;align-items:center}
+details.card>summary::-webkit-details-marker{display:none}
+.id{font-family:var(--mono);font-size:12px;color:var(--ink-2);background:var(--surface-2);border-radius:4px;padding:2px 6px}
+.title{font-weight:600}
+.sub{grid-column:2/-1;font-size:13px;color:var(--ink-2)}
+.flags{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.pill{font-size:12px;font-weight:600;border-radius:999px;padding:2px 9px;white-space:nowrap}
+.p-ok{background:var(--ok-bg);color:var(--ok)}
+.p-warn{background:var(--warn-bg);color:var(--warn)}
+.p-bad{background:var(--bad-bg);color:var(--bad)}
+.p-mute{background:var(--mute-bg);color:var(--mute)}
+.body{padding:4px 14px 14px;display:grid;gap:14px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px 22px;margin:0}
+.facts div{display:grid;gap:2px}
+.facts dt{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
+.facts dd{margin:0;max-width:65ch}
+.facts .wide{grid-column:1/-1}
+.val{display:flex;flex-wrap:wrap;gap:8px;align-items:center;border-top:1px dashed var(--line);padding-top:10px;font-size:13px}
+.val strong{font-weight:600;margin-right:2px}
+.obs{background:var(--accent-soft);border-radius:6px;padding:8px 10px;font-size:14px}
+
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:900px;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);background:var(--surface-2);position:sticky;top:0}
+td.tema{font-weight:600;min-width:150px}
+td.unico{background:var(--accent-soft);min-width:180px}
+tr:last-child td{border-bottom:0}
+
+.pend{display:grid;gap:8px}
+.pend-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;display:grid;grid-template-columns:auto 1fr auto;gap:4px 12px;align-items:start}
+.pend-item .n{font-family:var(--mono);font-size:12px;color:var(--ink-2);padding-top:3px}
+.pend-item .t{font-weight:600}
+.pend-item .d{grid-column:2/-1;font-size:14px}
+.pend-item .f{grid-column:2/-1;font-size:12px;color:var(--ink-2);display:flex;flex-wrap:wrap;gap:4px 14px}
+.empty{padding:30px;text-align:center;color:var(--ink-2);border:1px dashed var(--line);border-radius:10px}
+
+.hist{display:grid;gap:6px;font-size:14px}
+.hist div{display:grid;grid-template-columns:110px 1fr;gap:10px}
+.hist time{font-family:var(--mono);font-size:12px;color:var(--ink-2);padding-top:2px}
+
+@media (max-width:560px){
+  details.card>summary{grid-template-columns:auto 1fr}
+  .flags{grid-column:1/-1;justify-content:flex-start}
+  .pend-item{grid-template-columns:auto 1fr}
+  .pend-item .d,.pend-item .f{grid-column:1/-1}
+  .hist div{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <span class="eyebrow">Cooperativa · Atención al Cliente</span>
+    <h1>Gestiones de Atención al Cliente</h1>
+    <p class="muted" style="max-width:70ch;margin:0">Todo lo que se puede gestionar en Ventas, con requisitos, costos y a quién se deriva. Sirve para revisar con Ventas, Call Center y Mesa de Informes, sumar información nueva y unificar criterios.</p>
+    <div class="meta"><span id="upd"></span><span id="src"></span></div>
+  </header>
+
+  <section class="summary" id="summary" aria-label="Resumen por servicio"></section>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" id="tab-gestiones" aria-selected="true" data-tab="gestiones">Gestiones<span class="count" id="c-gest"></span></button>
+    <button role="tab" id="tab-criterios" aria-selected="false" data-tab="criterios">Criterios comunes<span class="count" id="c-crit"></span></button>
+    <button role="tab" id="tab-pendientes" aria-selected="false" data-tab="pendientes">Pendientes<span class="count" id="c-pend"></span></button>
+    <button role="tab" id="tab-historial" aria-selected="false" data-tab="historial">Historial</button>
+  </nav>
+
+  <section id="p-gestiones">
+    <div class="toolbar">
+      <div class="search"><input id="q" type="search" placeholder="Buscar: inquilino, garante, baja, reconexión…" aria-label="Buscar gestiones"></div>
+      <label class="toggle"><input type="checkbox" id="only-alert"> Solo con algo por definir</label>
+    </div>
+    <div class="chips" id="svc-chips" style="margin-bottom:18px"></div>
+    <div id="gest-list"></div>
+  </section>
+
+  <section id="p-criterios" hidden>
+    <p class="muted" style="margin-top:0">Cómo se resuelve cada tema en cada servicio según los documentos actuales. La última columna es para el criterio único que se acuerde entre los tres sectores.</p>
+    <div class="table-wrap"><table id="crit-table"></table></div>
+  </section>
+
+  <section id="p-pendientes" hidden>
+    <div class="chips" id="pend-chips" style="margin-bottom:14px"></div>
+    <div class="pend" id="pend-list"></div>
+  </section>
+
+  <section id="p-historial" hidden>
+    <h2 style="margin-bottom:10px">Historial de cambios</h2>
+    <div class="hist" id="hist"></div>
+  </section>
+</div>
+
+<script>
+const DATA = /*DATA*/;
+
+const SVC = {
+  "Energía":{c:"var(--energia)"}, "Agua":{c:"var(--agua)"}, "TIC":{c:"var(--tic)"},
+  "Movilcoop":{c:"var(--movil)"}, "Otros servicios":{c:"var(--otros)"}, "General y administrativo":{c:"var(--general)"}
+};
+const SECTORES = [["ventas","Ventas"],["call_center","Call Center"],["mesa_informes","Mesa de Informes"]];
+const VAL_CLASS = {"Vigente":"p-ok","Se hace distinto":"p-warn","No lo sabíamos":"p-warn","No aplica":"p-mute","A definir":"p-bad"};
+const TIPO_CLASS = {"Contradicción":"p-bad","Sin desarrollar":"p-warn","A confirmar":"p-warn","Error de forma":"p-mute","Mejora":"p-mute"};
+const EST_CLASS = {"Abierto":"p-bad","En revisión":"p-warn","Resuelto":"p-ok"};
+
+const el = (tag, attrs={}, ...kids) => {
+  const e = document.createElement(tag);
+  for (const [k,v] of Object.entries(attrs)) {
+    if (k === "class") e.className = v; else if (k === "style") e.style.cssText = v; else e.setAttribute(k, v);
+  }
+  for (const k of kids) if (k != null && k !== "") e.append(k);
+  return e;
+};
+const pill = (txt, cls) => el("span", {class:"pill " + cls}, txt);
+const alertOf = g => {
+  const t = [g.quien, g.intervienen, g.documentacion].join(" ");
+  if (/SIN DESARROLLAR/.test(t)) return ["Sin desarrollar","p-warn"];
+  if (/A CONFIRMAR/.test(t)) return ["A confirmar","p-bad"];
+  return null;
+};
+const store = {
+  get(k, d){ try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch(e){ return d; } },
+  set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
+};
+
+document.getElementById("upd").textContent = "Actualizado: " + DATA.actualizado.split("-").reverse().join("/");
+document.getElementById("src").textContent = "Fuentes: " + DATA.fuentes.join(" · ");
+
+// ---------- Resumen ----------
+const services = Object.keys(SVC);
+let activeSvc = store.get("svc", "Todos");
+const summary = document.getElementById("summary");
+services.forEach(s => {
+  const n = DATA.gestiones.filter(g => g.servicio === s).length;
+  const b = el("button", {class:"stat", style:"--c:" + SVC[s].c, type:"button"},
+    el("span", {class:"n"}, String(n)), el("span", {class:"l"}, s), el("span", {class:"bar"}));
+  b.addEventListener("click", () => { setTab("gestiones"); setSvc(s); });
+  summary.append(b);
+});
+const abiertos = DATA.pendientes.filter(p => p.estado !== "Resuelto").length;
+const sb = el("button", {class:"stat", style:"--c:var(--bad)", type:"button"},
+  el("span", {class:"n"}, String(abiertos)), el("span", {class:"l"}, "Pendientes abiertos"), el("span", {class:"bar"}));
+sb.addEventListener("click", () => setTab("pendientes"));
+summary.append(sb);
+
+document.getElementById("c-gest").textContent = DATA.gestiones.length;
+document.getElementById("c-crit").textContent = DATA.criterios.length;
+document.getElementById("c-pend").textContent = abiertos;
+
+// ---------- Tabs ----------
+function setTab(t){
+  document.querySelectorAll("nav.tabs button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === t)));
+  ["gestiones","criterios","pendientes","historial"].forEach(x => document.getElementById("p-" + x).hidden = x !== t);
+  store.set("tab", t);
+}
+document.querySelectorAll("nav.tabs button").forEach(b => b.addEventListener("click", () => setTab(b.dataset.tab)));
+
+// ---------- Gestiones ----------
+const chipsBox = document.getElementById("svc-chips");
+["Todos", ...services].forEach(s => {
+  const c = el("button", {class:"chip", type:"button", "data-svc":s, style: s === "Todos" ? "" : "--c:" + SVC[s].c},
+    s === "Todos" ? null : el("span", {class:"dot"}), s);
+  c.addEventListener("click", () => setSvc(s));
+  chipsBox.append(c);
+});
+function setSvc(s){
+  activeSvc = s; store.set("svc", s);
+  chipsBox.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", String(c.dataset.svc === s)));
+  renderGestiones();
+}
+const q = document.getElementById("q");
+const onlyAlert = document.getElementById("only-alert");
+q.addEventListener("input", renderGestiones);
+onlyAlert.addEventListener("change", renderGestiones);
+const norm = s => (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+
+function card(g){
+  const a = alertOf(g);
+  const flags = el("span", {class:"flags"});
+  if (a) flags.append(pill(a[0], a[1]));
+  const reviewed = SECTORES.filter(([k]) => g.validacion[k]).length;
+  flags.append(pill(reviewed === 0 ? "Sin revisar" : reviewed + "/3 sectores", reviewed === 3 ? "p-ok" : "p-mute"));
+  const sum = el("summary", {},
+    el("span", {class:"id"}, g.id), el("span", {class:"title"}, g.gestion), flags,
+    g.quien ? el("span", {class:"sub"}, g.quien) : null);
+  const facts = el("dl", {class:"facts"});
+  [["Documentación", g.documentacion, true], ["Costo / qué se cobra", g.costo], ["Canales", g.canales],
+   ["Intervienen / a quién se deriva", g.intervienen], ["Fuente", g.fuente]]
+    .forEach(([k, v, wide]) => { if (v && v !== "—") facts.append(el("div", {class: wide ? "wide" : ""}, el("dt", {}, k), el("dd", {}, v))); });
+  const val = el("div", {class:"val"});
+  SECTORES.forEach(([k, name]) => {
+    const v = g.validacion[k];
+    val.append(el("span", {}, el("strong", {}, name + ":"), " "), pill(v || "Sin revisar", v ? VAL_CLASS[v] || "p-mute" : "p-mute"));
+  });
+  const body = el("div", {class:"body"}, facts, val, g.observaciones ? el("div", {class:"obs"}, g.observaciones) : null);
+  return el("details", {class:"card", style:"--c:" + SVC[g.servicio].c}, sum, body);
+}
+
+function renderGestiones(){
+  const box = document.getElementById("gest-list");
+  box.replaceChildren();
+  const term = norm(q.value.trim());
+  const list = DATA.gestiones.filter(g =>
+    (activeSvc === "Todos" || g.servicio === activeSvc) &&
+    (!onlyAlert.checked || alertOf(g)) &&
+    (!term || norm(Object.values(g).join(" ") + " " + g.observaciones).includes(term)));
+  if (!list.length){ box.append(el("div", {class:"empty"}, "No hay gestiones que coincidan con la búsqueda.")); return; }
+  services.forEach(s => {
+    const items = list.filter(g => g.servicio === s);
+    if (!items.length) return;
+    const grp = el("section", {class:"group", style:"--c:" + SVC[s].c},
+      el("h2", {}, el("span", {class:"sw"}), s, el("small", {}, items.length + (items.length === 1 ? " gestión" : " gestiones"))),
+      el("div", {class:"list"}, ...items.map(card)));
+    box.append(grp);
+  });
+  if (term && list.length <= 3) box.querySelectorAll("details").forEach(d => d.open = true);
+}
+
+// ---------- Criterios ----------
+(function(){
+  const t = document.getElementById("crit-table");
+  const cols = [["tema","Tema"],["energia","Energía"],["agua","Agua"],["tic","TIC"],["movilcoop","Movilcoop"],["sociales","Servicios sociales"],["criterio_unico","Criterio único acordado"]];
+  t.append(el("thead", {}, el("tr", {}, ...cols.map(([,h]) => el("th", {scope:"col"}, h)))));
+  const tb = el("tbody");
+  DATA.criterios.forEach(r => tb.append(el("tr", {}, ...cols.map(([k]) =>
+    el("td", {class: k === "tema" ? "tema" : k === "criterio_unico" ? "unico" : ""},
+      k === "criterio_unico" && !r[k] ? el("span", {class:"muted"}, "A definir") : r[k])))));
+  t.append(tb);
+})();
+
+// ---------- Pendientes ----------
+const pendChips = document.getElementById("pend-chips");
+let pendFilter = "Todos";
+const tipos = ["Todos", ...new Set(DATA.pendientes.map(p => p.tipo))];
+tipos.forEach(tp => {
+  const n = tp === "Todos" ? DATA.pendientes.length : DATA.pendientes.filter(p => p.tipo === tp).length;
+  const c = el("button", {class:"chip", type:"button", "data-t":tp, "aria-pressed": String(tp === "Todos")}, tp + " · " + n);
+  c.addEventListener("click", () => { pendFilter = tp; pendChips.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", String(x.dataset.t === tp))); renderPend(); });
+  pendChips.append(c);
+});
+function renderPend(){
+  const box = document.getElementById("pend-list");
+  box.replaceChildren();
+  DATA.pendientes.filter(p => pendFilter === "Todos" || p.tipo === pendFilter).forEach(p => {
+    const foot = el("div", {class:"f"}, el("span", {}, p.servicio), el("span", {}, p.fuente),
+      p.quien_define ? el("span", {}, "Define: " + p.quien_define) : null);
+    box.append(el("div", {class:"pend-item"},
+      el("span", {class:"n"}, "#" + p.n),
+      el("span", {class:"t"}, p.tema),
+      el("span", {class:"flags"}, pill(p.tipo, TIPO_CLASS[p.tipo] || "p-mute"), pill(p.estado, EST_CLASS[p.estado] || "p-mute")),
+      el("div", {class:"d"}, p.detalle),
+      p.resolucion ? el("div", {class:"d obs"}, "Resolución: " + p.resolucion) : null,
+      foot));
+  });
+}
+
+// ---------- Historial ----------
+const hist = document.getElementById("hist");
+[...DATA.historial].reverse().forEach(h => hist.append(el("div", {}, el("time", {datetime:h.fecha}, h.fecha.split("-").reverse().join("/")), el("span", {}, h.cambio))));
+
+// ---------- Init ----------
+if (!services.includes(activeSvc)) activeSvc = "Todos";
+setSvc(activeSvc);
+renderPend();
+const hashTab = (location.hash || "").slice(1);
+setTab(["gestiones","criterios","pendientes","historial"].includes(hashTab) ? hashTab : store.get("tab", "gestiones"));
+</script>
