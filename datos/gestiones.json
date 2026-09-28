@@ -1497,6 +1497,25 @@
    "observaciones": "",
    "precios": [],
    "notas": []
+  },
+  {
+   "id": "G07",
+   "servicio": "General y administrativo",
+   "gestion": "Financiaciones y prórrogas de deuda",
+   "quien": "No se otorgan financiaciones ni prórrogas de ningún tipo.",
+   "documentacion": "",
+   "costo": "",
+   "canales": "",
+   "intervienen": "",
+   "fuente": "",
+   "validacion": {
+    "ventas": ""
+   },
+   "observaciones": "",
+   "precios": [],
+   "notas": [
+    "Prórroga: a lo sumo se le puede informar al cliente hasta qué fecha puede abonar."
+   ]
   }
  ],
  "criterios": [
@@ -1591,8 +1610,8 @@
    "detalle": "Punto 5.1.7 vacío ('falta desarrollar algo Patri').",
    "fuente": "IO 02.01 §5.1.7",
    "quien_define": "",
-   "estado": "Abierto",
-   "resolucion": ""
+   "estado": "Resuelto",
+   "resolucion": "No se otorgan financiaciones ni prórrogas de ningún tipo. En prórroga solo se informa hasta qué fecha puede abonar."
   },
   {
    "n": 2,
@@ -1602,8 +1621,8 @@
    "detalle": "Punto 5.1.8 vacío.",
    "fuente": "IO 02.01 §5.1.8",
    "quien_define": "",
-   "estado": "Abierto",
-   "resolucion": ""
+   "estado": "Resuelto",
+   "resolucion": "No se otorgan financiaciones ni prórrogas de ningún tipo. En prórroga solo se informa hasta qué fecha puede abonar."
   },
   {
    "n": 3,
@@ -2028,6 +2047,10 @@
   {
    "fecha": "2026-09-28",
    "cambio": "Se quitó E14 Prórrogas."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "Se agregó G07: no se otorgan financiaciones ni prórrogas; en prórroga solo se informa hasta qué fecha puede abonar. Resueltos los pendientes de Financiaciones y Prórrogas."
   }
  ]
 }
