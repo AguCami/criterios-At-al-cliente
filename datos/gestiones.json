@@ -510,23 +510,6 @@
    "notas": []
   },
   {
-   "id": "E14",
-   "gestion": "Prórrogas",
-   "quien": "SIN DESARROLLAR en el instructivo.",
-   "documentacion": "",
-   "costo": "",
-   "canales": "",
-   "intervienen": "",
-   "fuente": "IO 02.01 §5.1.8",
-   "servicio": "Energía",
-   "validacion": {
-    "ventas": ""
-   },
-   "observaciones": "",
-   "precios": [],
-   "notas": []
-  },
-  {
    "id": "A01",
    "gestion": "Conexión urbana o rural – propietario",
    "quien": "Propietario.",
@@ -2041,6 +2024,10 @@
   {
    "fecha": "2026-09-28",
    "cambio": "Se quitó E13 Financiaciones."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "Se quitó E14 Prórrogas."
   }
  ]
 }
