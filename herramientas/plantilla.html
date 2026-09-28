@@ -136,7 +136,7 @@ tr:last-child td{border-bottom:0}
   <header class="top">
     <span class="eyebrow">Cooperativa · Atención al Cliente</span>
     <h1>Gestiones de Atención al Cliente</h1>
-    <p class="muted" style="max-width:70ch;margin:0">Todo lo que se puede gestionar en Ventas, con requisitos, costos y a quién se deriva. Sirve para revisar con Ventas, Call Center y Mesa de Informes, sumar información nueva y unificar criterios.</p>
+    <p class="muted" style="max-width:70ch;margin:0">Todo lo que se puede gestionar en Ventas, con requisitos, costos y a quién se deriva. Ventas revisa y valida cada gestión; sirve para sumar información nueva y unificar criterios con Call Center y Mesa de Informes.</p>
     <div class="meta"><span id="upd"></span><span id="src"></span></div>
   </header>
 
@@ -181,7 +181,7 @@ const SVC = {
   "Energía":{c:"var(--energia)"}, "Agua":{c:"var(--agua)"}, "TIC":{c:"var(--tic)"},
   "Movilcoop":{c:"var(--movil)"}, "Otros servicios":{c:"var(--otros)"}, "General y administrativo":{c:"var(--general)"}
 };
-const SECTORES = [["ventas","Ventas"],["call_center","Call Center"],["mesa_informes","Mesa de Informes"]];
+const SECTORES = [["ventas","Ventas"]];
 const VAL_CLASS = {"Vigente":"p-ok","Se hace distinto":"p-warn","No lo sabíamos":"p-warn","No aplica":"p-mute","A definir":"p-bad"};
 const TIPO_CLASS = {"Contradicción":"p-bad","Sin desarrollar":"p-warn","A confirmar":"p-warn","Error de forma":"p-mute","Mejora":"p-mute"};
 const EST_CLASS = {"Abierto":"p-bad","En revisión":"p-warn","Resuelto":"p-ok"};
@@ -267,8 +267,8 @@ function card(g){
   const a = alertOf(g);
   const flags = el("span", {class:"flags"});
   if (a) flags.append(pill(a[0], a[1]));
-  const reviewed = SECTORES.filter(([k]) => g.validacion[k]).length;
-  flags.append(pill(reviewed === 0 ? "Sin revisar" : reviewed + "/3 sectores", reviewed === 3 ? "p-ok" : "p-mute"));
+  const vv = g.validacion.ventas;
+  flags.append(pill(vv ? "Ventas: " + vv : "Sin revisar", vv ? VAL_CLASS[vv] || "p-mute" : "p-mute"));
   const sum = el("summary", {},
     el("span", {class:"id"}, g.id), el("span", {class:"title"}, g.gestion), flags,
     g.quien ? el("span", {class:"sub"}, g.quien) : null);

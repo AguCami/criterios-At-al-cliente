@@ -19,9 +19,7 @@
    "fuente": "Tarifario vigente",
    "servicio": "Energía",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -68,9 +66,7 @@
    "fuente": "Tarifario vigente",
    "servicio": "Energía",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -123,9 +119,7 @@
    "fuente": "Tarifario vigente",
    "servicio": "Energía",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -171,9 +165,7 @@
    "fuente": "Tarifario vigente",
    "servicio": "Energía",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -230,9 +222,7 @@
    "intervienen": "",
    "fuente": "Tarifario vigente",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -280,9 +270,7 @@
    "intervienen": "",
    "fuente": "Tarifario vigente",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -336,9 +324,7 @@
    "intervienen": "",
    "fuente": "Tarifario vigente",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -385,9 +371,7 @@
    "intervienen": "",
    "fuente": "Tarifario vigente",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -445,9 +429,7 @@
    "fuente": "IO 02.01 §5.1.1",
    "servicio": "Energía",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -464,9 +446,7 @@
    "fuente": "IO 02.01 §5.1.1",
    "servicio": "Energía",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -483,9 +463,7 @@
    "fuente": "IO 02.01 §5.1.2",
    "servicio": "Energía",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -502,9 +480,7 @@
    "fuente": "IO 02.01 §5.1.3",
    "servicio": "Energía",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -521,9 +497,7 @@
    "fuente": "IO 02.01 §5.1.4",
    "servicio": "Energía",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -540,9 +514,7 @@
    "fuente": "IO 02.01 §5.1.5",
    "servicio": "Energía",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -559,9 +531,7 @@
    "fuente": "IO 02.01 §5.1.6",
    "servicio": "Energía",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -578,9 +548,7 @@
    "fuente": "IO 02.01 §5.1.7",
    "servicio": "Energía",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -597,9 +565,7 @@
    "fuente": "IO 02.01 §5.1.8",
    "servicio": "Energía",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -616,9 +582,7 @@
    "fuente": "Tarifario vigente",
    "servicio": "Agua",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -666,9 +630,7 @@
    "fuente": "IO 02.02 §5.2",
    "servicio": "Agua",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -685,9 +647,7 @@
    "fuente": "IO 02.02 §5.2",
    "servicio": "Agua",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -704,9 +664,7 @@
    "fuente": "IO 02.02 §5.2.2",
    "servicio": "Agua",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -723,9 +681,7 @@
    "fuente": "Tarifario vigente",
    "servicio": "Agua",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -742,9 +698,7 @@
    "fuente": "IO 02.02 §5.2.5",
    "servicio": "Agua",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -761,9 +715,7 @@
    "fuente": "IO 02.02 §5.2.6",
    "servicio": "Agua",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -780,9 +732,7 @@
    "fuente": "IO 02.02 §5.2.7",
    "servicio": "Agua",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -799,9 +749,7 @@
    "fuente": "IO 02.03 §5.1.1",
    "servicio": "TIC",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -839,9 +787,7 @@
    "fuente": "Tarifario vigente",
    "servicio": "TIC",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -892,9 +838,7 @@
    "intervienen": "",
    "fuente": "Tarifario vigente",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -935,9 +879,7 @@
    "fuente": "Tarifario vigente",
    "servicio": "TIC",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -979,9 +921,7 @@
    "fuente": "Tarifario vigente",
    "servicio": "TIC",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -1037,9 +977,7 @@
    "fuente": "IO 02.03 §5.3.1",
    "servicio": "TIC",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1056,9 +994,7 @@
    "intervienen": "",
    "fuente": "Tarifario vigente",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -1106,9 +1042,7 @@
    "fuente": "IO 02.03 §5.2.3 / §5.3.4",
    "servicio": "TIC",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1125,9 +1059,7 @@
    "fuente": "IO 02.03 §5.1.3 / §5.2.4 / §5.3.5",
    "servicio": "TIC",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1144,9 +1076,7 @@
    "fuente": "IO 02.03 §5.1.4",
    "servicio": "TIC",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1163,9 +1093,7 @@
    "fuente": "IO 02.03 §5.1.2",
    "servicio": "TIC",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1182,9 +1110,7 @@
    "fuente": "IO 02.03 §5.2.7",
    "servicio": "TIC",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1201,9 +1127,7 @@
    "fuente": "IO 02.03 §5.2.8",
    "servicio": "TIC",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1220,9 +1144,7 @@
    "fuente": "PG 02 §5.6.1",
    "servicio": "Movilcoop",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1239,9 +1161,7 @@
    "fuente": "PG 02 §5.6.3",
    "servicio": "Movilcoop",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1258,9 +1178,7 @@
    "fuente": "PG 02 §5.6.5",
    "servicio": "Movilcoop",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1277,9 +1195,7 @@
    "fuente": "PG 02 §5.6.6",
    "servicio": "Movilcoop",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1296,9 +1212,7 @@
    "fuente": "PG 02 §5.6.9",
    "servicio": "Movilcoop",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1315,9 +1229,7 @@
    "fuente": "PG 02 §5.6.8",
    "servicio": "Movilcoop",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1334,9 +1246,7 @@
    "fuente": "PG 02 §5.6.10",
    "servicio": "Movilcoop",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1353,9 +1263,7 @@
    "fuente": "PG 02 §5.6.7",
    "servicio": "Movilcoop",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1372,9 +1280,7 @@
    "fuente": "PG 02 §5.4.1",
    "servicio": "Otros servicios",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1391,9 +1297,7 @@
    "fuente": "PG 02 §5.4.2",
    "servicio": "Otros servicios",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1410,9 +1314,7 @@
    "fuente": "PG 02 §5.5",
    "servicio": "Otros servicios",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1429,9 +1331,7 @@
    "fuente": "PG 02 §5.5",
    "servicio": "Otros servicios",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1448,9 +1348,7 @@
    "fuente": "PG 02 §5.5",
    "servicio": "Otros servicios",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1467,9 +1365,7 @@
    "fuente": "PG 02 §5.5",
    "servicio": "Otros servicios",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1486,9 +1382,7 @@
    "fuente": "Tarifario vigente",
    "servicio": "Otros servicios",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -1511,9 +1405,7 @@
    "fuente": "Tarifario vigente",
    "servicio": "Otros servicios",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [
@@ -1543,9 +1435,7 @@
    "fuente": "PG 02 §5.7.3",
    "servicio": "Otros servicios",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1562,9 +1452,7 @@
    "fuente": "PG 02 Servicios sociales",
    "servicio": "Otros servicios",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1581,9 +1469,7 @@
    "fuente": "PG 02 §5",
    "servicio": "General y administrativo",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1600,9 +1486,7 @@
    "fuente": "PG 02 Correos",
    "servicio": "General y administrativo",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1619,9 +1503,7 @@
    "fuente": "PG 02 §5.10",
    "servicio": "General y administrativo",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1638,9 +1520,7 @@
    "fuente": "PG 02 §5.5 / IO 02.02 / IO 02.03",
    "servicio": "General y administrativo",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1657,9 +1537,7 @@
    "fuente": "PG 02 §5.8",
    "servicio": "General y administrativo",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -1676,9 +1554,7 @@
    "fuente": "PG 02 §5.9",
    "servicio": "General y administrativo",
    "validacion": {
-    "ventas": "",
-    "call_center": "",
-    "mesa_informes": ""
+    "ventas": ""
    },
    "observaciones": "",
    "precios": [],
@@ -2162,6 +2038,10 @@
   {
    "fecha": "2026-09-25",
    "cambio": "Se reformuló la forma de pago del depósito en garantía."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "La validación de cada gestión queda solo a cargo de Ventas: se quitaron Call Center y Mesa de Informes."
   }
  ]
 }
