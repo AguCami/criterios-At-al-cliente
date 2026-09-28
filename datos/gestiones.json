@@ -650,7 +650,9 @@
      "$12.300"
     ]
    ],
-   "notas": []
+   "notas": [
+    "El teléfono, igual que la luz y el agua, hace socio de la Cooperativa a quien lo contrata."
+   ]
   },
   {
    "id": "T02",
@@ -2009,6 +2011,10 @@
   {
    "fecha": "2026-09-28",
    "cambio": "A06 Cambio de titularidad de agua marcado en naranja para revisar. Se quitó A08 Facturación de obras de agua."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "T01: el teléfono hace socio de la Cooperativa, igual que la luz y el agua."
   }
  ]
 }
