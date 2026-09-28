@@ -558,23 +558,6 @@
    "notas": []
   },
   {
-   "id": "A02",
-   "gestion": "Conexión – inquilino",
-   "quien": "A CONFIRMAR: el texto dice garante si es inquilino, pero también que el servicio está siempre a nombre del propietario.",
-   "documentacion": "—",
-   "costo": "—",
-   "canales": "—",
-   "intervienen": "",
-   "fuente": "IO 02.02 §5.2",
-   "servicio": "Agua",
-   "validacion": {
-    "ventas": ""
-   },
-   "observaciones": "",
-   "precios": [],
-   "notas": []
-  },
-  {
    "id": "A03",
    "gestion": "Conexión en lugar a estrenar",
    "quien": "Factibilidad afirmativa con el permiso municipal.",
@@ -2051,6 +2034,10 @@
   {
    "fecha": "2026-09-28",
    "cambio": "Se agregó G07: no se otorgan financiaciones ni prórrogas; en prórroga solo se informa hasta qué fecha puede abonar. Resueltos los pendientes de Financiaciones y Prórrogas."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "Se quitó A02 Conexión de agua – inquilino."
   }
  ]
 }
