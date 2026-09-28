@@ -481,7 +481,7 @@
    "quien": "La pide el titular.",
    "documentacion": "—",
    "costo": "Se factura consumo hasta la toma de lectura; se reintegra depósito si lo hubo.",
-   "canales": "Presencial",
+   "canales": "Presencial / Web",
    "intervienen": "Facturación",
    "fuente": "IO 02.01 §5.1.4",
    "servicio": "Energía",
@@ -2055,6 +2055,10 @@
   {
    "fecha": "2026-09-28",
    "cambio": "Se agregó el marcado en naranja para texto a revisar con Ventas. E09: costo trifásico y nota de crédito marcados."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "E10 Baja voluntaria: se agregó el canal web."
   }
  ]
 }
