@@ -510,23 +510,6 @@
    "notas": []
   },
   {
-   "id": "E12",
-   "gestion": "Facturación de obras",
-   "quien": "La pide Oficina Técnica por mail (obras@).",
-   "documentacion": "Cuenta de 'ventas a terceros' con el mismo mail que el convenio.",
-   "costo": "Ventas factura y arma el plan de pago; el comitente firma el convenio (lo completa Contaduría).",
-   "canales": "Mail interno",
-   "intervienen": "Oficina Técnica; Contaduría",
-   "fuente": "IO 02.01 §5.1.6",
-   "servicio": "Energía",
-   "validacion": {
-    "ventas": ""
-   },
-   "observaciones": "",
-   "precios": [],
-   "notas": []
-  },
-  {
    "id": "E13",
    "gestion": "Financiaciones (titular o garante)",
    "quien": "SIN DESARROLLAR en el instructivo.",
@@ -2067,6 +2050,10 @@
   {
    "fecha": "2026-09-28",
    "cambio": "E11 Traslado: canal web marcado para revisar con Ventas."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "Se quitó E12 Facturación de obras."
   }
  ]
 }
