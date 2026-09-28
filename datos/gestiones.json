@@ -555,49 +555,17 @@
      "$20"
     ]
    ],
-   "notas": []
-  },
-  {
-   "id": "A03",
-   "gestion": "Conexión en lugar a estrenar",
-   "quien": "Factibilidad afirmativa con el permiso municipal.",
-   "documentacion": "Permiso municipal.",
-   "costo": "Si es negativa, Oficina Técnica informa el costo de la obra.",
-   "canales": "Presencial",
-   "intervienen": "Oficina Técnica",
-   "fuente": "IO 02.02 §5.2",
-   "servicio": "Agua",
-   "validacion": {
-    "ventas": ""
-   },
-   "observaciones": "",
-   "precios": [],
-   "notas": []
-  },
-  {
-   "id": "A04",
-   "gestion": "Corte (colocación de cepo)",
-   "quien": "Por falta de pago.",
-   "documentacion": "—",
-   "costo": "—",
-   "canales": "—",
-   "intervienen": "Lo genera Facturación",
-   "fuente": "IO 02.02 §5.2.2",
-   "servicio": "Agua",
-   "validacion": {
-    "ventas": ""
-   },
-   "observaciones": "",
-   "precios": [],
-   "notas": []
+   "notas": [
+    "Si es a estrenar: con el permiso municipal, Oficina Técnica verifica la factibilidad. Si es negativa, informa el costo de la obra."
+   ]
   },
   {
    "id": "A05",
    "gestion": "Reconexión (quita de cepo)",
-   "quien": "Con deuda paga.",
+   "quien": "Hasta 30 días del corte: automática al pagar la factura. Más de 30 días: la pide el titular en Ventas.",
    "documentacion": "",
    "costo": "$13.164,25.",
-   "canales": "Presencial / Web",
+   "canales": "Hasta 30 días: pago por cualquier medio. Más de 30 días: Ventas y caja.",
    "intervienen": "",
    "fuente": "Tarifario vigente",
    "servicio": "Agua",
@@ -606,15 +574,19 @@
    },
    "observaciones": "",
    "precios": [],
-   "notas": []
+   "notas": [
+    "Hasta 30 días desde el corte: se reconecta abonando la factura que generó el corte, por cualquier medio de pago. El trámite de reconexión es automático y su costo pasa a la próxima facturación.",
+    "Más de 30 días desde el corte: el titular se acerca a Ventas a solicitar la reconexión y luego abona la reconexión en caja.",
+    "La reconexión puede demorar hasta 24 hs en realizarse."
+   ]
   },
   {
    "id": "A06",
    "gestion": "Cambio de titularidad",
-   "quien": "Solo por fallecimiento del titular o compra de la propiedad (el servicio va a nombre del propietario).",
-   "documentacion": "Similar a energía.",
-   "costo": "Suscripción de acciones si corresponde.",
-   "canales": "Presencial",
+   "quien": "[[Solo por fallecimiento del titular o compra de la propiedad (el servicio va a nombre del propietario).]]",
+   "documentacion": "[[Similar a energía.]]",
+   "costo": "[[Suscripción de acciones si corresponde.]]",
+   "canales": "[[Presencial]]",
    "intervienen": "",
    "fuente": "IO 02.02 §5.2.5",
    "servicio": "Agua",
@@ -634,23 +606,6 @@
    "canales": "Presencial",
    "intervienen": "",
    "fuente": "IO 02.02 §5.2.6",
-   "servicio": "Agua",
-   "validacion": {
-    "ventas": ""
-   },
-   "observaciones": "",
-   "precios": [],
-   "notas": []
-  },
-  {
-   "id": "A08",
-   "gestion": "Facturación de obras de agua",
-   "quien": "La pide Oficina Técnica por mail.",
-   "documentacion": "Igual que E12.",
-   "costo": "Igual que E12.",
-   "canales": "Mail interno",
-   "intervienen": "Oficina Técnica; Contaduría",
-   "fuente": "IO 02.02 §5.2.7",
    "servicio": "Agua",
    "validacion": {
     "ventas": ""
@@ -2038,6 +1993,22 @@
   {
    "fecha": "2026-09-28",
    "cambio": "Se quitó A02 Conexión de agua – inquilino."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "A03 (lugar a estrenar) se sumó como nota en A01 y se quitó."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "Se quitó A04 Corte (colocación de cepo)."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "A05 Reconexión de agua: mismo circuito que energía (hasta 30 días automática al pagar; más de 30 días Ventas + caja; hasta 24 hs)."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "A06 Cambio de titularidad de agua marcado en naranja para revisar. Se quitó A08 Facturación de obras de agua."
   }
  ]
 }
