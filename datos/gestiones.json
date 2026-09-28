@@ -510,23 +510,6 @@
    "notas": []
   },
   {
-   "id": "E13",
-   "gestion": "Financiaciones (titular o garante)",
-   "quien": "SIN DESARROLLAR en el instructivo.",
-   "documentacion": "",
-   "costo": "",
-   "canales": "",
-   "intervienen": "Gerencia Administrativa (aprobación)",
-   "fuente": "IO 02.01 §5.1.7",
-   "servicio": "Energía",
-   "validacion": {
-    "ventas": ""
-   },
-   "observaciones": "",
-   "precios": [],
-   "notas": []
-  },
-  {
    "id": "E14",
    "gestion": "Prórrogas",
    "quien": "SIN DESARROLLAR en el instructivo.",
@@ -2054,6 +2037,10 @@
   {
    "fecha": "2026-09-28",
    "cambio": "Se quitó E12 Facturación de obras."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "Se quitó E13 Financiaciones."
   }
  ]
 }
