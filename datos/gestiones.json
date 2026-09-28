@@ -436,23 +436,6 @@
    "notas": []
   },
   {
-   "id": "E07",
-   "gestion": "Pilares / monolito",
-   "quien": "Según potencia y tipo.",
-   "documentacion": "Anexo III: pilares mono y trifásicos hasta 5 kVA y mayores. Subterráneos, agrupaciones de medidores y transitorios de obra: consultar.",
-   "costo": "—",
-   "canales": "—",
-   "intervienen": "Oficina Técnica",
-   "fuente": "IO 02.01 §5.1.1",
-   "servicio": "Energía",
-   "validacion": {
-    "ventas": ""
-   },
-   "observaciones": "",
-   "precios": [],
-   "notas": []
-  },
-  {
    "id": "E08",
    "gestion": "Reconexión",
    "quien": "Hasta 30 días del corte: automática al pagar la factura. Más de 30 días: la pide el titular en Ventas.",
@@ -2050,6 +2033,10 @@
   {
    "fecha": "2026-09-28",
    "cambio": "E08 Reconexión de energía: circuito hasta 30 días (automática al pagar) y más de 30 días (Ventas + caja); demora de hasta 24 hs."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "Se quitó E07 Pilares / monolito."
   }
  ]
 }
