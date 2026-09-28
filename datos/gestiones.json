@@ -459,8 +459,8 @@
   {
    "id": "E09",
    "gestion": "Cambio de titularidad / razón social",
-   "quien": "Entre inquilinos, inquilino↔propietario o por fallecimiento. Vienen ambas partes.",
-   "documentacion": "Toma de lectura 2-3 días antes. Garante o depósito del nuevo titular. Certificado apto si corresponde (inspección de monolito).",
+   "quien": "Cambio del titular del servicio, también por fallecimiento.",
+   "documentacion": "Vienen ambas partes (titular saliente y nuevo titular); Toma de lectura 2-3 días antes. Garante o depósito del nuevo titular. Certificado apto si corresponde (inspección de monolito).",
    "costo": "Transferencia monofásica: $82.984,05. Trifásica: mismo costo que la conexión. Al saliente se le hace nota de crédito por su depósito.",
    "canales": "Presencial",
    "intervienen": "Facturación (lectura); Banco de Sangre si hay adherentes; Servicios sociales (se transfieren o se dan de baja)",
@@ -2037,6 +2037,10 @@
   {
    "fecha": "2026-09-28",
    "cambio": "Se quitó E07 Pilares / monolito."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "E09: se simplificó la descripción y 'vienen ambas partes' pasó a la documentación."
   }
  ]
 }
