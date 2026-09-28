@@ -480,7 +480,7 @@
    "gestion": "Baja voluntaria",
    "quien": "La pide el titular.",
    "documentacion": "—",
-   "costo": "Se factura consumo hasta la toma de lectura; se reintegra depósito si lo hubo.",
+   "costo": "Se factura el consumo hasta la fecha de la baja. Se reintegra el depósito si lo hubo.",
    "canales": "Presencial / Web",
    "intervienen": "Facturación",
    "fuente": "IO 02.01 §5.1.4",
@@ -1598,7 +1598,7 @@
   },
   {
    "tema": "Baja",
-   "energia": "Titular. Toma de lectura previa y reintegro de depósito.",
+   "energia": "Titular. Se factura el consumo hasta la fecha de la baja y se reintegra el depósito si lo hubo.",
    "agua": "Titular + DJ vivienda libre de ocupantes.",
    "tic": "Titular + devolución de equipos en comodato.",
    "movilcoop": "1 año mínimo; sin deuda; del 1 al 15.",
@@ -2059,6 +2059,10 @@
   {
    "fecha": "2026-09-28",
    "cambio": "E10 Baja voluntaria: se agregó el canal web."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "E10: se factura el consumo hasta la fecha de la baja."
   }
  ]
 }
