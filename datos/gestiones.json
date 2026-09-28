@@ -455,10 +455,10 @@
   {
    "id": "E08",
    "gestion": "Reconexión",
-   "quien": "Con deuda paga. Corte > 30 días: titular o autorización del titular.",
+   "quien": "Hasta 30 días del corte: automática al pagar la factura. Más de 30 días: la pide el titular en Ventas.",
    "documentacion": "Si el medidor fue retirado: certificado apto + inspección. Firma declaración jurada.",
    "costo": "Monofásica: $12.656,53.",
-   "canales": "Presencial / Caja (pedidos por WhatsApp 'Teletrabajo')",
+   "canales": "Hasta 30 días: pago por cualquier medio. Más de 30 días: Ventas y caja.",
    "intervienen": "Facturación (deuda); Técnico de Servicios",
    "fuente": "IO 02.01 §5.1.2",
    "servicio": "Energía",
@@ -467,7 +467,11 @@
    },
    "observaciones": "",
    "precios": [],
-   "notas": []
+   "notas": [
+    "Hasta 30 días desde el corte: se reconecta abonando la factura que generó el corte, por cualquier medio de pago. El trámite de reconexión es automático y su costo pasa a la próxima facturación.",
+    "Más de 30 días desde el corte: el titular se acerca a Ventas a solicitar la reconexión y luego abona la reconexión en caja.",
+    "La reconexión puede demorar hasta 24 hs en realizarse."
+   ]
   },
   {
    "id": "E09",
@@ -1591,7 +1595,7 @@
   },
   {
    "tema": "Reconexión con corte > 30 días",
-   "energia": "Titular o autorización del titular. Si retiraron medidor: certificado apto + inspección.",
+   "energia": "El titular pide la reconexión en Ventas y la abona en caja. Si retiraron el medidor: certificado apto + inspección.",
    "agua": "Sin desarrollar.",
    "tic": "Titular o autorización del titular.",
    "movilcoop": "Solo suspendidas por falta de pago.",
@@ -1600,7 +1604,7 @@
   },
   {
    "tema": "Canales de reconexión",
-   "energia": "Presencial; pedidos de caja por WhatsApp.",
+   "energia": "Hasta 30 días: automática al pagar la factura por cualquier medio (el costo va a la próxima factura). Más de 30 días: Ventas + caja. Demora hasta 24 hs.",
    "agua": "Presencial / Web.",
    "tic": "Presencial / Web / Caja automática.",
    "movilcoop": "Presencial.",
@@ -1741,8 +1745,8 @@
    "detalle": "El texto dice 'se trataba': ¿sigue vigente para reconexiones y quita de cepo?",
    "fuente": "IO 02.01 §5.1.2",
    "quien_define": "",
-   "estado": "Abierto",
-   "resolucion": ""
+   "estado": "En revisión",
+   "resolucion": "Hasta 30 días la reconexión es automática al pagar; confirmar si el grupo de WhatsApp sigue en uso."
   },
   {
    "n": 10,
@@ -2042,6 +2046,10 @@
   {
    "fecha": "2026-09-28",
    "cambio": "La validación de cada gestión queda solo a cargo de Ventas: se quitaron Call Center y Mesa de Informes."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "E08 Reconexión de energía: circuito hasta 30 días (automática al pagar) y más de 30 días (Ventas + caja); demora de hasta 24 hs."
   }
  ]
 }
