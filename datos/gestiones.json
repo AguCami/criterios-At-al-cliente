@@ -657,7 +657,7 @@
   {
    "id": "T02",
    "gestion": "Internet por fibra (GPON) – socio",
-   "quien": "Ya es socio: tiene a su nombre algún servicio que lo asocia a la Cooperativa (luz, agua o teléfono). Se puede contratar solo, sin otros servicios TIC.",
+   "quien": "Para socios: quien ya tiene luz, agua o teléfono a su nombre.",
    "documentacion": "Si es inquilino sin energía a su nombre: DNI; contrato de alquiler con firma del propietario certificada; garante (titular del servicio de energía en la Cooperativa).",
    "costo": "Conexión $29.645 en 4 cuotas de $7.411,25.",
    "canales": "Presencial / Web / Teléfono",
@@ -709,7 +709,7 @@
    "id": "T12",
    "servicio": "TIC",
    "gestion": "Internet por fibra (GPON) – no socio",
-   "quien": "No es socio: no tiene a su nombre ningún servicio que lo asocie a la Cooperativa (luz, agua o teléfono). Se puede contratar solo, sin otros servicios TIC.",
+   "quien": "Para no socios: quien no tiene luz, agua ni teléfono a su nombre.",
    "documentacion": "Si es inquilino sin energía a su nombre: DNI; contrato de alquiler con firma del propietario certificada.",
    "costo": "Conexión $60.500 en 6 cuotas de $10.083,33.",
    "canales": "Presencial / Web / Teléfono",
@@ -2019,6 +2019,10 @@
   {
    "fecha": "2026-09-28",
    "cambio": "T02/T12: se aclaró qué es socio (tiene luz, agua o teléfono a su nombre) y qué es no socio."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "T02/T12: se simplificó la redacción de la descripción."
   }
  ]
 }
