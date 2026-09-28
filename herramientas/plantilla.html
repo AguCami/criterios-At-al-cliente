@@ -88,6 +88,7 @@ details.card>summary::-webkit-details-marker{display:none}
 .facts dt{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
 .facts dd{margin:0;max-width:65ch}
 .facts .wide{grid-column:1/-1}
+.subttl{font-weight:600;margin-top:4px}
 .facts ul{margin:2px 0 0;padding-left:20px;display:grid;gap:3px;max-width:75ch}
 .facts li::marker{color:var(--c)}
 .cols{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:18px 28px}
@@ -208,6 +209,16 @@ const rich = (txt, st = {open:false}) => {
   return f;
 };
 const toList = txt => {
+  if (txt.includes("::")) {
+    const f = document.createDocumentFragment();
+    txt.split("||").forEach(block => {
+      const [t, rest] = block.includes("::") ? block.split("::") : ["", block];
+      if (t.trim()) f.append(el("div", {class:"subttl"}, rich(t.trim())));
+      const body = toList(rest.trim());
+      f.append(body instanceof Node && body.nodeName === "UL" ? body : el("ul", {}, el("li", {}, body)));
+    });
+    return f;
+  }
   const items = txt.split(/;\s*|\.\s+(?=(?:\[\[)?[A-ZÁÉÍÓÚÑ][a-záéíóúñ])/)
     .map(x => x.trim().replace(/\.(\]\])?$/, "$1")).filter(Boolean)
     .map(x => x.replace(/^(\[\[)?(.)/, (m, a, c) => (a || "") + c.toUpperCase()));
