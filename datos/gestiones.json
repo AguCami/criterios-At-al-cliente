@@ -461,7 +461,7 @@
    "gestion": "Cambio de titularidad / razón social",
    "quien": "Cambio del titular del servicio, también por fallecimiento.",
    "documentacion": "Vienen ambas partes (titular saliente y nuevo titular); Si el nuevo titular es el propietario: escritura o boleto de compraventa; Si el nuevo titular es inquilino: contrato de alquiler certificado y depósito en garantía o garante (propietario y titular de la energía); Certificado apto si corresponde (inspección de monolito).",
-   "costo": "Transferencia monofásica: $82.984,05. Trifásica: mismo costo que la conexión. Al saliente se le hace nota de crédito por su depósito.",
+   "costo": "Transferencia monofásica: $82.984,05. [[Trifásica: mismo costo que la conexión. Al saliente se le hace nota de crédito por su depósito.]]",
    "canales": "Presencial",
    "intervienen": "Facturación (lectura); Banco de Sangre si hay adherentes; Servicios sociales (se transfieren o se dan de baja)",
    "fuente": "IO 02.01 §5.1.3",
@@ -2051,6 +2051,10 @@
   {
    "fecha": "2026-09-28",
    "cambio": "E09: documentación separada según el nuevo titular sea propietario o inquilino."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "Se agregó el marcado en naranja para texto a revisar con Ventas. E09: costo trifásico y nota de crédito marcados."
   }
  ]
 }

@@ -6,7 +6,7 @@
   --bg:#f3f5f4; --surface:#ffffff; --surface-2:#eaeeed; --ink:#18252c; --ink-2:#4a5a62; --line:#d5dcda;
   --accent:#0d6b73; --accent-soft:#d6ecec;
   --energia:#b86e12; --agua:#2767a8; --tic:#6a4bb0; --movil:#b3402f; --otros:#327d52; --general:#56656f;
-  --ok:#2f7d4a; --ok-bg:#dcefe2; --warn:#9a6300; --warn-bg:#fbeccb; --bad:#b0332a; --bad-bg:#f8dcd8; --mute:#5f6b71; --mute-bg:#e4e8e8;
+  --ok:#2f7d4a; --ok-bg:#dcefe2; --warn:#9a6300; --warn-bg:#fbeccb; --bad:#b0332a; --bad-bg:#f8dcd8; --mute:#5f6b71; --mute-bg:#e4e8e8; --rev:#c2530a; --rev-bg:#fde6d4;
   --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
   --mono:"IBM Plex Mono", ui-monospace, Consolas, monospace;
@@ -17,7 +17,7 @@
     --bg:#10181c; --surface:#172228; --surface-2:#1f2c33; --ink:#e4ecee; --ink-2:#a3b3b9; --line:#2d3c43;
     --accent:#55c0c6; --accent-soft:#16383c;
     --energia:#e3a14e; --agua:#6ea9e6; --tic:#a88ef0; --movil:#ec8474; --otros:#6fc394; --general:#9aabb6;
-    --ok:#7fd49c; --ok-bg:#183826; --warn:#f0c36b; --warn-bg:#3a2e12; --bad:#f29a90; --bad-bg:#3e1d1a; --mute:#a3b0b5; --mute-bg:#26343a;
+    --ok:#7fd49c; --ok-bg:#183826; --warn:#f0c36b; --warn-bg:#3a2e12; --bad:#f29a90; --bad-bg:#3e1d1a; --mute:#a3b0b5; --mute-bg:#26343a; --rev:#ff9d5c; --rev-bg:#40240f;
   }
 }
 :root[data-theme="dark"]{
@@ -25,7 +25,7 @@
   --bg:#10181c; --surface:#172228; --surface-2:#1f2c33; --ink:#e4ecee; --ink-2:#a3b3b9; --line:#2d3c43;
   --accent:#55c0c6; --accent-soft:#16383c;
   --energia:#e3a14e; --agua:#6ea9e6; --tic:#a88ef0; --movil:#ec8474; --otros:#6fc394; --general:#9aabb6;
-  --ok:#7fd49c; --ok-bg:#183826; --warn:#f0c36b; --warn-bg:#3a2e12; --bad:#f29a90; --bad-bg:#3e1d1a; --mute:#a3b0b5; --mute-bg:#26343a;
+  --ok:#7fd49c; --ok-bg:#183826; --warn:#f0c36b; --warn-bg:#3a2e12; --bad:#f29a90; --bad-bg:#3e1d1a; --mute:#a3b0b5; --mute-bg:#26343a; --rev:#ff9d5c; --rev-bg:#40240f;
 }
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;margin:0}
@@ -78,6 +78,9 @@ details.card>summary::-webkit-details-marker{display:none}
 .p-ok{background:var(--ok-bg);color:var(--ok)}
 .p-warn{background:var(--warn-bg);color:var(--warn)}
 .p-bad{background:var(--bad-bg);color:var(--bad)}
+.rev{color:var(--rev);font-weight:600}
+.p-rev{background:var(--rev-bg);color:var(--rev)}
+.legend{font-size:13px;color:var(--ink-2)}
 .p-mute{background:var(--mute-bg);color:var(--mute)}
 .body{padding:4px 14px 14px;display:grid;gap:14px}
 .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px 22px;margin:0}
@@ -152,7 +155,8 @@ tr:last-child td{border-bottom:0}
   <section id="p-gestiones">
     <div class="toolbar">
       <div class="search"><input id="q" type="search" placeholder="Buscar: inquilino, garante, baja, reconexión…" aria-label="Buscar gestiones"></div>
-      <label class="toggle"><input type="checkbox" id="only-alert"> Solo con algo por definir</label>
+      <label class="toggle"><input type="checkbox" id="only-alert"> Solo con algo por definir o revisar</label>
+      <span class="legend"><span class="rev">Texto en naranja</span>: a revisar con Ventas</span>
     </div>
     <div class="chips" id="svc-chips" style="margin-bottom:18px"></div>
     <div id="gest-list"></div>
@@ -194,17 +198,29 @@ const el = (tag, attrs={}, ...kids) => {
   for (const k of kids) if (k != null && k !== "") e.append(k);
   return e;
 };
+const rich = (txt, st = {open:false}) => {
+  const f = document.createDocumentFragment();
+  String(txt).split(/(\[\[|\]\])/).forEach(part => {
+    if (part === "[[") st.open = true;
+    else if (part === "]]") st.open = false;
+    else if (part) f.append(st.open ? el("span", {class:"rev", title:"A revisar con Ventas"}, part) : part);
+  });
+  return f;
+};
 const toList = txt => {
-  const items = txt.split(/;\s*|\.\s+(?=[A-ZÁÉÍÓÚÑ][a-záéíóúñ])/)
-    .map(x => x.trim().replace(/\.$/, "")).filter(Boolean)
-    .map(x => x.charAt(0).toUpperCase() + x.slice(1));
-  return items.length > 1 ? el("ul", {}, ...items.map(i => el("li", {}, i))) : txt;
+  const items = txt.split(/;\s*|\.\s+(?=(?:\[\[)?[A-ZÁÉÍÓÚÑ][a-záéíóúñ])/)
+    .map(x => x.trim().replace(/\.(\]\])?$/, "$1")).filter(Boolean)
+    .map(x => x.replace(/^(\[\[)?(.)/, (m, a, c) => (a || "") + c.toUpperCase()));
+  const st = {open:false};
+  return items.length > 1 ? el("ul", {}, ...items.map(i => el("li", {}, rich(i, st)))) : rich(txt);
 };
 const pill = (txt, cls) => el("span", {class:"pill " + cls}, txt);
 const alertOf = g => {
   const t = [g.quien, g.intervienen, g.documentacion].join(" ");
+  const all = [g.quien, g.documentacion, g.costo, g.canales, ...(g.notas || [])].join(" ");
   if (/SIN DESARROLLAR/.test(t)) return ["Sin desarrollar","p-warn"];
   if (/A CONFIRMAR/.test(t)) return ["A confirmar","p-bad"];
+  if (all.includes("[[")) return ["A revisar","p-rev"];
   return null;
 };
 const store = {
@@ -271,12 +287,12 @@ function card(g){
   flags.append(pill(vv ? "Ventas: " + vv : "Sin revisar", vv ? VAL_CLASS[vv] || "p-mute" : "p-mute"));
   const sum = el("summary", {},
     el("span", {class:"id"}, g.id), el("span", {class:"title"}, g.gestion), flags,
-    g.quien ? el("span", {class:"sub"}, g.quien) : null);
+    g.quien ? el("span", {class:"sub"}, rich(g.quien)) : null);
   const facts = el("dl", {class:"facts"});
   [["Documentación", g.documentacion, true], ["Costo / qué se cobra", (g.precios && g.precios.length) ? "" : g.costo], ["Canales", g.canales]]
-    .forEach(([k, v, wide]) => { if (v && v !== "—") facts.append(el("div", {class: wide ? "wide" : ""}, el("dt", {}, k), el("dd", {}, wide ? toList(v) : v))); });
+    .forEach(([k, v, wide]) => { if (v && v !== "—") facts.append(el("div", {class: wide ? "wide" : ""}, el("dt", {}, k), el("dd", {}, wide ? toList(v) : rich(v)))); });
   const left = el("div", {}, facts);
-  if (g.notas && g.notas.length) left.append(el("div", {class:"notes"}, ...g.notas.map(n => el("div", {class:"note"}, n))));
+  if (g.notas && g.notas.length) left.append(el("div", {class:"notes"}, ...g.notas.map(n => el("div", {class:"note"}, rich(n)))));
   let main = left;
   if (g.precios && g.precios.length) {
     const prices = el("div", {class:"prices"});
