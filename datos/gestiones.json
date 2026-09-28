@@ -498,7 +498,7 @@
    "quien": "Sin deuda y con disponibilidad técnica en el nuevo domicilio.",
    "documentacion": "Inquilino: contrato con firmas certificadas + renovación de garantía. Propietario: escritura.",
    "costo": "Monofásica: $82.984,05. Trifásica: mismo costo que la conexión.",
-   "canales": "Presencial",
+   "canales": "Presencial / [[Web]]",
    "intervienen": "Oficina Técnica; Técnico de Servicios",
    "fuente": "IO 02.01 §5.1.5",
    "servicio": "Energía",
@@ -2063,6 +2063,10 @@
   {
    "fecha": "2026-09-28",
    "cambio": "E10: se factura el consumo hasta la fecha de la baja."
+  },
+  {
+   "fecha": "2026-09-28",
+   "cambio": "E11 Traslado: canal web marcado para revisar con Ventas."
   }
  ]
 }
